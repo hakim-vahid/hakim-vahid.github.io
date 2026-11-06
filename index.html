@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -305,22 +306,27 @@ footer{background:#040a10;border-top:1px solid rgba(139,232,227,.16)}
  .hv-orbit,.hv-node,.hv-core{animation:none!important}
  .hv-route-step,.card,.hv-investor-card{transition:none}
 }
-
 </style>
 </head>
 <body>
 <div class="topline"></div>
 <header>
   <div class="container nav">
-    <a class="brand" href="#home" aria-label="Hakim Vahid home"><span class="brand-mark"><span>H</span></span><span>HAKIM VAHID</span></a>
+    <a class="brand" href="#home" aria-label="Hakim Vahid home"><span class="brand-mark"><span>H</span></span><span data-i18n="brand">HAKIM VAHID</span></a>
     <nav id="mainNav">
-      <a href="#flight-deck">Flight Deck</a><a href="#platform" data-i18n="nav_platform">Platform</a><a href="#command" data-i18n="nav_command">Global command</a><a href="#architecture" data-i18n="nav_arch">Architecture</a><a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a><a href="#investor-suite">Investors</a><a href="#pricing" data-i18n="nav_ecosystem">Ecosystem</a>
+      <a href="#flight-deck" data-i18n="nav_flight">Flight Deck</a>
+      <a href="#platform" data-i18n="nav_platform">Platform</a>
+      <a href="#command" data-i18n="nav_command">Global command</a>
+      <a href="#architecture" data-i18n="nav_arch">Architecture</a>
+      <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
+      <a href="#investor-suite" data-i18n="nav_investors">Investors</a>
+      <a href="#pricing" data-i18n="nav_ecosystem">Ecosystem</a>
     </nav>
     <div class="nav-actions">
       <select class="lang" id="language" aria-label="Select language"><option value="en">EN</option><option value="fa">FA</option><option value="ar">AR</option></select>
       <button class="btn btn-ghost" data-modal="login" data-i18n="login">Log in</button>
       <button class="btn btn-primary" data-modal="register" data-i18n="register">Create account</button>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">MENU</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" data-i18n="menu">MENU</button>
     </div>
   </div>
 </header>
@@ -330,316 +336,637 @@ footer{background:#040a10;border-top:1px solid rgba(139,232,227,.16)}
   <div class="hero-bg"></div>
   <div class="container"><div class="hero-content">
     <div class="eyebrow" data-i18n="hero_eyebrow">A unified intelligence ecosystem</div>
-    <h1>INTELLIGENCE<br><span>BEYOND TOMORROW.</span></h1>
+    <h1 data-i18n-html="hero_title">INTELLIGENCE<br><span>BEYOND TOMORROW.</span></h1>
     <div class="hero-sub" data-i18n="hero_sub">One intelligence universe. Infinite ways to think, build and discover.</div>
     <p class="hero-copy" data-i18n="hero_copy">Hakim Vahid is envisioned as a unified intelligence universe — bringing research, creation, documents, data, enterprise workflows and human expertise into one elegant command environment.</p>
-    <div class="hero-actions"><a class="btn btn-primary" href="#platform" data-i18n="explore">Explore the ecosystem</a><a class="btn btn-ghost" href="#architecture" data-i18n="architecture_btn">Explore the architecture</a></div>
-    <div class="hero-meta"><div><strong>ONE</strong><span data-i18n="meta_ecosystem">Connected ecosystem</span></div><div><strong>GLOBAL</strong><span data-i18n="meta_reach">Designed for global reach</span></div><div><strong>MODULAR</strong><span data-i18n="meta_arch">API-first architecture vision</span></div></div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#platform" data-i18n="explore">Explore the ecosystem</a>
+      <a class="btn btn-ghost" href="#architecture" data-i18n="architecture_btn">Explore the architecture</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong data-i18n="meta_one">ONE</strong><span data-i18n="meta_ecosystem">Connected ecosystem</span></div>
+      <div><strong data-i18n="meta_global">GLOBAL</strong><span data-i18n="meta_reach">Designed for global reach</span></div>
+      <div><strong data-i18n="meta_modular">MODULAR</strong><span data-i18n="meta_arch">API-first architecture vision</span></div>
+    </div>
   </div></div>
 </section>
 
 <section class="hv-deck" id="flight-deck">
  <div class="container">
-  <div class="hv-kicker">HAKIM VAHID / NEXT-GENERATION INTELLIGENCE INTERFACE</div>
-  <h2 class="hv-title">WELCOME TO THE <span>INTELLIGENCE FLIGHT DECK</span></h2>
-  <p class="hv-lead">A glass-interface command environment for people shaping what comes next — scientists, builders, institutions, investors and curious minds.</p>
+  <div class="hv-kicker" data-i18n="fd_kicker">HAKIM VAHID / NEXT-GENERATION INTELLIGENCE INTERFACE</div>
+  <h2 class="hv-title" data-i18n-html="fd_title">WELCOME TO THE <span>INTELLIGENCE FLIGHT DECK</span></h2>
+  <p class="hv-lead" data-i18n="fd_lead">A glass-interface command environment for people shaping what comes next — scientists, builders, institutions, investors and curious minds.</p>
   <div class="hv-flight">
    <aside class="hv-glass hv-side">
-    <div class="eyebrow">01 / Knowledge systems</div><h3>THINK. DISCOVER. VALIDATE.</h3>
-    <p>Move from a complex question to a structured path of research, evidence, analysis and communication.</p>
+    <div class="eyebrow" data-i18n="fd_side_eyebrow">01 / Knowledge systems</div>
+    <h3 data-i18n="fd_side_title">THINK. DISCOVER. VALIDATE.</h3>
+    <p data-i18n="fd_side_desc">Move from a complex question to a structured path of research, evidence, analysis and communication.</p>
     <div class="hv-mini-list">
-     <div class="hv-mini"><i></i>Research & literature intelligence</div>
-     <div class="hv-mini"><i></i>Scientific document workflows</div>
-     <div class="hv-mini"><i></i>Data, charts & evidence synthesis</div>
-     <div class="hv-mini"><i></i>Multilingual knowledge access</div>
+     <div class="hv-mini"><i></i><span data-i18n="fd_list_1">Research & literature intelligence</span></div>
+     <div class="hv-mini"><i></i><span data-i18n="fd_list_2">Scientific document workflows</span></div>
+     <div class="hv-mini"><i></i><span data-i18n="fd_list_3">Data, charts & evidence synthesis</span></div>
+     <div class="hv-mini"><i></i><span data-i18n="fd_list_4">Multilingual knowledge access</span></div>
     </div>
    </aside>
    <div class="hv-orbit-wrap">
     <div class="hv-orbit" id="hvOrbit">
-     <div class="hv-core"><div><strong>HAKIM</strong><small>VAHID / CORE</small></div></div>
-     <button class="hv-node n1 active" data-hv="research"><span>⌬</span><b>RESEARCH</b></button>
-     <button class="hv-node n2" data-hv="documents"><span>▤</span><b>DOCUMENTS</b></button>
-     <button class="hv-node n3" data-hv="capital"><span>◈</span><b>CAPITAL</b></button>
-     <button class="hv-node n4" data-hv="enterprise"><span>⌘</span><b>ENTERPRISE</b></button>
-     <button class="hv-node n5" data-hv="creation"><span>✧</span><b>CREATION</b></button>
-     <button class="hv-node n6" data-hv="data"><span>◉</span><b>DATA LAB</b></button>
-     <button class="hv-node n7" data-hv="security"><span>⬡</span><b>TRUST & SAFETY</b></button>
-     <button class="hv-node n8" data-hv="global"><span>◎</span><b>GLOBAL VIEW</b></button>
+     <div class="hv-core"><div><strong data-i18n="fd_core_1">HAKIM</strong><small data-i18n="fd_core_2">VAHID / CORE</small></div></div>
+     <button class="hv-node n1 active" data-hv="research"><span>⌬</span><b data-i18n="fd_node_1">RESEARCH</b></button>
+     <button class="hv-node n2" data-hv="documents"><span>▤</span><b data-i18n="fd_node_2">DOCUMENTS</b></button>
+     <button class="hv-node n3" data-hv="capital"><span>◈</span><b data-i18n="fd_node_3">CAPITAL</b></button>
+     <button class="hv-node n4" data-hv="enterprise"><span>⌘</span><b data-i18n="fd_node_4">ENTERPRISE</b></button>
+     <button class="hv-node n5" data-hv="creation"><span>✧</span><b data-i18n="fd_node_5">CREATION</b></button>
+     <button class="hv-node n6" data-hv="data"><span>◉</span><b data-i18n="fd_node_6">DATA LAB</b></button>
+     <button class="hv-node n7" data-hv="security"><span>⬡</span><b data-i18n="fd_node_7">TRUST & SAFETY</b></button>
+     <button class="hv-node n8" data-hv="global"><span>◎</span><b data-i18n="fd_node_8">GLOBAL VIEW</b></button>
     </div>
    </div>
    <aside class="hv-glass hv-selected" aria-live="polite">
-    <div class="eyebrow" id="hvCategory">SELECTED MODULE / 01</div>
-    <h3 id="hvName">Research Intelligence</h3>
-    <p id="hvDesc">Explore scientific literature, organize evidence, compare hypotheses and turn complex questions into clear research pathways.</p>
-    <a href="#modules" id="hvLink">Explore platform capabilities ↗</a>
+    <div class="eyebrow" id="hvCategory" data-i18n="fd_cat">SELECTED MODULE / 01</div>
+    <h3 id="hvName" data-i18n="fd_name">Research Intelligence</h3>
+    <p id="hvDesc" data-i18n="fd_desc">Explore scientific literature, organize evidence, compare hypotheses and turn complex questions into clear research pathways.</p>
+    <a href="#modules" id="hvLink" data-i18n="fd_link">Explore platform capabilities ↗</a>
    </aside>
   </div>
-  <div class="hv-bottom"><span class="hv-chip">MULTI-DOMAIN BY DESIGN</span><span class="hv-chip">HUMAN-LED DECISIONS</span><span class="hv-chip">MODULAR AI ECOSYSTEM</span><span class="hv-chip">BUILT FOR GLOBAL COLLABORATION</span></div>
+  <div class="hv-bottom">
+    <span class="hv-chip" data-i18n="fd_chip_1">MULTI-DOMAIN BY DESIGN</span>
+    <span class="hv-chip" data-i18n="fd_chip_2">HUMAN-LED DECISIONS</span>
+    <span class="hv-chip" data-i18n="fd_chip_3">MODULAR AI ECOSYSTEM</span>
+    <span class="hv-chip" data-i18n="fd_chip_4">BUILT FOR GLOBAL COLLABORATION</span>
+  </div>
  </div>
 </section>
 
 <section class="hv-route" id="guided-route" aria-label="Guided platform journey">
  <div class="container">
-  <div class="hv-route-head"><span class="eyebrow">YOUR ROUTE THROUGH HAKIM</span><span class="hv-route-caption">A clear path from first contact to institutional partnership</span></div>
+  <div class="hv-route-head">
+    <span class="eyebrow" data-i18n="route_eyebrow">YOUR ROUTE THROUGH HAKIM</span>
+    <span class="hv-route-caption" data-i18n="route_caption">A clear path from first contact to institutional partnership</span>
+  </div>
   <div class="hv-route-track">
-   <a class="hv-route-step" href="#platform"><i>01</i><b>Discover</b><small>Explore the intelligence suite</small></a>
-   <a class="hv-route-step" href="#mission-control"><i>02</i><b>Experience</b><small>Test the interactive concept</small></a>
-   <a class="hv-route-step" href="#architecture"><i>03</i><b>Understand</b><small>Review the system blueprint</small></a>
-   <a class="hv-route-step" href="#investor-suite"><i>04</i><b>Evaluate</b><small>Inspect the capital framework</small></a>
-   <a class="hv-route-step" href="#contact"><i>05</i><b>Connect</b><small>Start a serious conversation</small></a>
+   <a class="hv-route-step" href="#platform"><i>01</i><b data-i18n="route_1_t">Discover</b><small data-i18n="route_1_d">Explore the intelligence suite</small></a>
+   <a class="hv-route-step" href="#mission-control"><i>02</i><b data-i18n="route_2_t">Experience</b><small data-i18n="route_2_d">Test the interactive concept</small></a>
+   <a class="hv-route-step" href="#architecture"><i>03</i><b data-i18n="route_3_t">Understand</b><small data-i18n="route_3_d">Review the system blueprint</small></a>
+   <a class="hv-route-step" href="#investor-suite"><i>04</i><b data-i18n="route_4_t">Evaluate</b><small data-i18n="route_4_d">Inspect the capital framework</small></a>
+   <a class="hv-route-step" href="#contact"><i>05</i><b data-i18n="route_5_t">Connect</b><small data-i18n="route_5_d">Start a serious conversation</small></a>
   </div>
  </div>
 </section>
 
 <section class="hv-audience" id="future-audience">
  <div class="container">
-  <div class="section-head"><div class="eyebrow">An ecosystem for people who move the world</div><h2>From <span class="gold">discovery</span> to real-world impact.</h2><p>A shared workspace vision where deep expertise, practical tools and responsible capital can meet — without confusing a concept preview with a deployed service.</p></div>
-  <div class="hv-audience-grid">
-   <article class="hv-audience-card"><div class="glyph">⌬</div><h3>SCIENTISTS & RESEARCHERS</h3><p>Evidence workflows, literature mapping, manuscript support, data interpretation and collaboration spaces.</p></article>
-   <article class="hv-audience-card"><div class="glyph">◈</div><h3>INVESTORS & CAPITAL PARTNERS</h3><p>Structured project rooms, due-diligence checklists, transparent assumptions, milestones and impact narratives.</p></article>
-   <article class="hv-audience-card"><div class="glyph">▤</div><h3>FOUNDERS & INSTITUTIONS</h3><p>Strategy, planning, document operations, team knowledge and decision-support workflows.</p></article>
-   <article class="hv-audience-card"><div class="glyph">✧</div><h3>CREATORS & BUILDERS</h3><p>Writing, visual ideation, prototyping, analysis and connected creative workflows.</p></article>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="aud_eyebrow">An ecosystem for people who move the world</div>
+    <h2 data-i18n-html="aud_title">From <span class="gold">discovery</span> to real-world impact.</h2>
+    <p data-i18n="aud_desc">A shared workspace vision where deep expertise, practical tools and responsible capital can meet — without confusing a concept preview with a deployed service.</p>
   </div>
-  <p class="hv-note">The flight deck and module selector are interactive product-concept interfaces. AI execution, live data, secure accounts, document vaults, investor verification and financial services require production integrations, governance and independent validation.</p>
+  <div class="hv-audience-grid">
+   <article class="hv-audience-card"><div class="glyph">⌬</div><h3 data-i18n="aud_1_t">SCIENTISTS & RESEARCHERS</h3><p data-i18n="aud_1_d">Evidence workflows, literature mapping, manuscript support, data interpretation and collaboration spaces.</p></article>
+   <article class="hv-audience-card"><div class="glyph">◈</div><h3 data-i18n="aud_2_t">INVESTORS & CAPITAL PARTNERS</h3><p data-i18n="aud_2_d">Structured project rooms, due-diligence checklists, transparent assumptions, milestones and impact narratives.</p></article>
+   <article class="hv-audience-card"><div class="glyph">▤</div><h3 data-i18n="aud_3_t">FOUNDERS & INSTITUTIONS</h3><p data-i18n="aud_3_d">Strategy, planning, document operations, team knowledge and decision-support workflows.</p></article>
+   <article class="hv-audience-card"><div class="glyph">✧</div><h3 data-i18n="aud_4_t">CREATORS & BUILDERS</h3><p data-i18n="aud_4_d">Writing, visual ideation, prototyping, analysis and connected creative workflows.</p></article>
+  </div>
+  <p class="hv-note" data-i18n="aud_note">The flight deck and module selector are interactive product-concept interfaces. AI execution, live data, secure accounts, document vaults, investor verification and financial services require production integrations, governance and independent validation.</p>
  </div>
 </section>
 
 <div class="trust-strip"><div class="container trust-grid">
-  <div class="trust-item"><strong>AI ORCHESTRATION</strong><span>Multi-model routing and task coordination</span></div>
-  <div class="trust-item"><strong>HUMAN-CENTRED</strong><span>Consent, oversight and user control</span></div>
-  <div class="trust-item"><strong>GLOBAL BY DESIGN</strong><span>Localization and regional data awareness</span></div>
-  <div class="trust-item"><strong>MODULAR PLATFORM</strong><span>Services that can evolve independently</span></div>
+  <div class="trust-item"><strong data-i18n="trust_1_t">AI ORCHESTRATION</strong><span data-i18n="trust_1_d">Multi-model routing and task coordination</span></div>
+  <div class="trust-item"><strong data-i18n="trust_2_t">HUMAN-CENTRED</strong><span data-i18n="trust_2_d">Consent, oversight and user control</span></div>
+  <div class="trust-item"><strong data-i18n="trust_3_t">GLOBAL BY DESIGN</strong><span data-i18n="trust_3_d">Localization and regional data awareness</span></div>
+  <div class="trust-item"><strong data-i18n="trust_4_t">MODULAR PLATFORM</strong><span data-i18n="trust_4_d">Services that can evolve independently</span></div>
 </div></div>
 
 <section class="section" id="platform"><div class="container">
-  <div class="section-head"><div class="eyebrow">01 / The platform</div><h2>One platform. <span class="gold">Many dimensions</span> of intelligence.</h2><p>Hakim Vahid is envisioned as a connected suite of tools that helps people create, reason, research, protect, plan and operate. Each module can be developed and integrated on its own roadmap.</p></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="plat_eyebrow">01 / The platform</div>
+    <h2 data-i18n-html="plat_title">One platform. <span class="gold">Many dimensions</span> of intelligence.</h2>
+    <p data-i18n="plat_desc">Hakim Vahid is envisioned as a connected suite of tools that helps people create, reason, research, protect, plan and operate. Each module can be developed and integrated on its own roadmap.</p>
+  </div>
   <div class="grid feature-grid">
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85" alt="Abstract artificial intelligence visualization"></div><div class="card-body"><span class="tag build">Core module</span><h3>OMNI CHAT & REASONING</h3><p>Multi-model conversations, structured reasoning, coding assistance, document understanding and multilingual workflows.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1686191128892-3b37add4c9e5?auto=format&fit=crop&w=900&q=85" alt="Digital creative visual artwork"></div><div class="card-body"><span class="tag roadmap">Creative suite</span><h3>VISUAL GENESIS</h3><p>Image concepts, visual ideation, storyboards, design workflows and video-generation integrations where licensed services are available.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=85" alt="Music production studio"></div><div class="card-body"><span class="tag roadmap">Creative suite</span><h3>SONIC STUDIO</h3><p>Original music and sound workflows, audio editing assistance, production tools and consent-based voice technologies.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85" alt="Business data analytics dashboard"></div><div class="card-body"><span class="tag build">Productivity</span><h3>DATA FORGE</h3><p>Spreadsheet analysis, formula assistance, PDF extraction, reporting, visualization and presentation generation.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85" alt="AI"></div><div class="card-body"><span class="tag build" data-i18n="plat_1_tag">Core module</span><h3 data-i18n="plat_1_t">OMNI CHAT & REASONING</h3><p data-i18n="plat_1_d">Multi-model conversations, structured reasoning, coding assistance, document understanding and multilingual workflows.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1686191128892-3b37add4c9e5?auto=format&fit=crop&w=900&q=85" alt="Art"></div><div class="card-body"><span class="tag roadmap" data-i18n="plat_2_tag">Creative suite</span><h3 data-i18n="plat_2_t">VISUAL GENESIS</h3><p data-i18n="plat_2_d">Image concepts, visual ideation, storyboards, design workflows and video-generation integrations where licensed services are available.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=85" alt="Music"></div><div class="card-body"><span class="tag roadmap" data-i18n="plat_3_tag">Creative suite</span><h3 data-i18n="plat_3_t">SONIC STUDIO</h3><p data-i18n="plat_3_d">Original music and sound workflows, audio editing assistance, production tools and consent-based voice technologies.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85" alt="Data"></div><div class="card-body"><span class="tag build" data-i18n="plat_4_tag">Productivity</span><h3 data-i18n="plat_4_t">DATA FORGE</h3><p data-i18n="plat_4_d">Spreadsheet analysis, formula assistance, PDF extraction, reporting, visualization and presentation generation.</p></div></article>
   </div>
 </div></section>
 
 <section class="section" id="command"><div class="container">
-  <div class="section-head"><div class="eyebrow">02 / Global command center</div><h2>A clearer view of a <span class="gold">complex world.</span></h2><p>A unified situational-awareness workspace can bring trusted external data, alerts and operational context together. The panel below is a design preview, not a live feed.</p></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="cmd_eyebrow">02 / Global command center</div>
+    <h2 data-i18n-html="cmd_title">A clearer view of a <span class="gold">complex world.</span></h2>
+    <p data-i18n="cmd_desc">A unified situational-awareness workspace can bring trusted external data, alerts and operational context together. The panel below is a design preview, not a live feed.</p>
+  </div>
   <div class="command">
-    <div class="command-map" role="img" aria-label="Satellite view of Earth used as a conceptual global dashboard background"><div class="map-overlay"></div><i class="map-dot d1"></i><i class="map-dot d2"></i><i class="map-dot d3"></i><i class="map-dot d4"></i><div class="map-label">GLOBAL VIEW / CONCEPTUAL INTERFACE</div></div>
-    <div class="command-side"><div class="eyebrow">Unified intelligence layer</div><h3>OMNI-DASHBOARD</h3><p class="muted" style="font-size:.82rem;margin:0">A single operational surface for signals that matter — with source attribution, timestamps and confidence indicators.</p>
-      <div class="metric-grid"><div class="metric"><strong>EARTH</strong><span>Weather, hazards and environment</span></div><div class="metric"><strong>CITY</strong><span>Mobility and urban systems</span></div><div class="metric"><strong>ASSETS</strong><span>Energy and infrastructure</span></div><div class="metric"><strong>INSIGHT</strong><span>AI-assisted analysis</span></div></div>
-      <div class="signal"><span>Weather and severe alerts</span><small>External data integration</small></div><div class="signal"><span>Air quality and fire monitoring</span><small>External data integration</small></div><div class="signal"><span>Traffic and transit status</span><small>Provider-dependent</small></div><div class="signal"><span>Travel and itinerary intelligence</span><small>Booking partner required</small></div>
-      <p class="disclaimer">Safety-critical alerts must come from authoritative agencies and validated feeds. Hakim Vahid should explain and route information, never replace official emergency instructions.</p>
+    <div class="command-map" role="img" aria-label="Satellite view"><div class="map-overlay"></div><i class="map-dot d1"></i><i class="map-dot d2"></i><i class="map-dot d3"></i><i class="map-dot d4"></i><div class="map-label" data-i18n="cmd_map_label">GLOBAL VIEW / CONCEPTUAL INTERFACE</div></div>
+    <div class="command-side">
+      <div class="eyebrow" data-i18n="cmd_side_eyebrow">Unified intelligence layer</div>
+      <h3 data-i18n="cmd_side_title">OMNI-DASHBOARD</h3>
+      <p class="muted" style="font-size:.82rem;margin:0" data-i18n="cmd_side_desc">A single operational surface for signals that matter — with source attribution, timestamps and confidence indicators.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong data-i18n="cmd_m_1_t">EARTH</strong><span data-i18n="cmd_m_1_d">Weather, hazards and environment</span></div>
+        <div class="metric"><strong data-i18n="cmd_m_2_t">CITY</strong><span data-i18n="cmd_m_2_d">Mobility and urban systems</span></div>
+        <div class="metric"><strong data-i18n="cmd_m_3_t">ASSETS</strong><span data-i18n="cmd_m_3_d">Energy and infrastructure</span></div>
+        <div class="metric"><strong data-i18n="cmd_m_4_t">INSIGHT</strong><span data-i18n="cmd_m_4_d">AI-assisted analysis</span></div>
+      </div>
+      <div class="signal"><span data-i18n="cmd_s_1_t">Weather and severe alerts</span><small data-i18n="cmd_s_1_d">External data integration</small></div>
+      <div class="signal"><span data-i18n="cmd_s_2_t">Air quality and fire monitoring</span><small data-i18n="cmd_s_2_d">External data integration</small></div>
+      <div class="signal"><span data-i18n="cmd_s_3_t">Traffic and transit status</span><small data-i18n="cmd_s_3_d">Provider-dependent</small></div>
+      <div class="signal"><span data-i18n="cmd_s_4_t">Travel and itinerary intelligence</span><small data-i18n="cmd_s_4_d">Booking partner required</small></div>
+      <p class="disclaimer" data-i18n="cmd_disclaimer">Safety-critical alerts must come from authoritative agencies and validated feeds. Hakim Vahid should explain and route information, never replace official emergency instructions.</p>
     </div>
   </div>
 </div></section>
 
 <section class="section"><div class="container split">
-  <div class="visual"><img loading="lazy" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=85" alt="Modern city skyline at night"><div class="visual-caption">Cities, systems and people — connected intelligently.</div></div>
-  <div><div class="eyebrow">03 / Intelligence for the real world</div><h2 style="font:500 clamp(2rem,4vw,3rem)/1.12 Manrope;margin:12px 0 16px">From digital workspaces to <span class="gold">physical infrastructure.</span></h2><p class="muted">The platform vision extends beyond chat. Hakim Vahid can become an interface for understanding complex systems, coordinating specialist tools and supporting human decisions.</p>
-    <ul class="list-check"><li>Smart city operations and mobility intelligence</li><li>Digital twins for infrastructure planning and simulation</li><li>Energy, water and environmental monitoring</li><li>Disaster preparedness and resilience workflows</li><li>Enterprise knowledge and operational copilots</li></ul>
-    <a class="btn btn-ghost" href="#modules">Discover intelligence modules</a>
+  <div class="visual"><img loading="lazy" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=85" alt="City"><div class="visual-caption" data-i18n="rw_caption">Cities, systems and people — connected intelligently.</div></div>
+  <div>
+    <div class="eyebrow" data-i18n="rw_eyebrow">03 / Intelligence for the real world</div>
+    <h2 style="font:500 clamp(2rem,4vw,3rem)/1.12 Manrope;margin:12px 0 16px" data-i18n-html="rw_title">From digital workspaces to <span class="gold">physical infrastructure.</span></h2>
+    <p class="muted" data-i18n="rw_desc">The platform vision extends beyond chat. Hakim Vahid can become an interface for understanding complex systems, coordinating specialist tools and supporting human decisions.</p>
+    <ul class="list-check">
+      <li data-i18n="rw_li_1">Smart city operations and mobility intelligence</li>
+      <li data-i18n="rw_li_2">Digital twins for infrastructure planning and simulation</li>
+      <li data-i18n="rw_li_3">Energy, water and environmental monitoring</li>
+      <li data-i18n="rw_li_4">Disaster preparedness and resilience workflows</li>
+      <li data-i18n="rw_li_5">Enterprise knowledge and operational copilots</li>
+    </ul>
+    <a class="btn btn-ghost" href="#modules" data-i18n="rw_btn">Discover intelligence modules</a>
   </div>
 </div></section>
 
 <section class="section" id="modules"><div class="container">
-  <div class="section-head"><div class="eyebrow">04 / Intelligence modules</div><h2>Specialized intelligence. <span class="gold">One experience.</span></h2><p>These modules define a long-term product portfolio. Each requires dedicated domain partners, validated data, clear governance and production engineering before being marketed as operational.</p></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="mod_eyebrow">04 / Intelligence modules</div>
+    <h2 data-i18n-html="mod_title">Specialized intelligence. <span class="gold">One experience.</span></h2>
+    <p data-i18n="mod_desc">These modules define a long-term product portfolio. Each requires dedicated domain partners, validated data, clear governance and production engineering before being marketed as operational.</p>
+  </div>
   <div class="grid module-grid">
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=85" alt="Cybersecurity operations"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>CYBER SHIELD</h3><p>Security posture insights, suspicious-activity triage, file-risk workflows, identity protection guidance and incident response coordination.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=85" alt="Digital city skyline"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>DIGITAL TWIN</h3><p>Scenario modelling for cities, buildings, utilities and industrial assets using connected sensor and geospatial data.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85" alt="Medical research and healthcare"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>HEALTH INTELLIGENCE</h3><p>Health-record organization, lab-result explanations and appointment preparation with privacy controls and clinical boundaries.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Financial analytics charts"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>FINANCIAL INTELLIGENCE</h3><p>Market research, portfolio education, financial scenario analysis and risk reporting — not a substitute for licensed advice.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=85" alt="Mountain and natural environment"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>EARTH INTELLIGENCE</h3><p>Earth observation, environmental indicators, wildfire and flood awareness, air-quality context and climate-risk insights.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85" alt="Robotics and autonomous systems"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>AUTONOMOUS AGENTS</h3><p>Permissioned agents for multi-step research, document workflows, project coordination and enterprise process automation.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85" alt="Education and learning"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>KNOWLEDGE HUB</h3><p>Research assistance, source-grounded learning, literature reviews, tutoring workflows and multilingual knowledge spaces.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85" alt="Energy infrastructure"></div><div class="card-body"><span class="tag roadmap">Planned module</span><h3>ENERGY & RESILIENCE</h3><p>Energy-system analytics, demand insights, asset monitoring and resilience planning for critical infrastructure operators.</p></div></article>
-    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85" alt="Air travel and aircraft"></div><div class="card-body"><span class="tag roadmap">Partner integration</span><h3>TRAVEL & MOBILITY</h3><p>Trip planning, transport comparison, itinerary management and booking handoffs through authorized providers.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=85" alt="Cyber"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_1_t">CYBER SHIELD</h3><p data-i18n="mod_1_d">Security posture insights, suspicious-activity triage, file-risk workflows, identity protection guidance and incident response coordination.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=85" alt="Twin"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_2_t">DIGITAL TWIN</h3><p data-i18n="mod_2_d">Scenario modelling for cities, buildings, utilities and industrial assets using connected sensor and geospatial data.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85" alt="Health"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_3_t">HEALTH INTELLIGENCE</h3><p data-i18n="mod_3_d">Health-record organization, lab-result explanations and appointment preparation with privacy controls and clinical boundaries.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Finance"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_4_t">FINANCIAL INTELLIGENCE</h3><p data-i18n="mod_4_d">Market research, portfolio education, financial scenario analysis and risk reporting — not a substitute for licensed advice.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=85" alt="Earth"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_5_t">EARTH INTELLIGENCE</h3><p data-i18n="mod_5_d">Earth observation, environmental indicators, wildfire and flood awareness, air-quality context and climate-risk insights.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85" alt="Agents"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_6_t">AUTONOMOUS AGENTS</h3><p data-i18n="mod_6_d">Permissioned agents for multi-step research, document workflows, project coordination and enterprise process automation.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85" alt="Education"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_7_t">KNOWLEDGE HUB</h3><p data-i18n="mod_7_d">Research assistance, source-grounded learning, literature reviews, tutoring workflows and multilingual knowledge spaces.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85" alt="Energy"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag">Planned module</span><h3 data-i18n="mod_8_t">ENERGY & RESILIENCE</h3><p data-i18n="mod_8_d">Energy-system analytics, demand insights, asset monitoring and resilience planning for critical infrastructure operators.</p></div></article>
+    <article class="card"><div class="card-img"><img loading="lazy" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85" alt="Travel"></div><div class="card-body"><span class="tag roadmap" data-i18n="mod_tag_partner">Partner integration</span><h3 data-i18n="mod_9_t">TRAVEL & MOBILITY</h3><p data-i18n="mod_9_d">Trip planning, transport comparison, itinerary management and booking handoffs through authorized providers.</p></div></article>
   </div>
 </div></section>
 
 <section class="section"><div class="container split">
-  <div><div class="eyebrow">05 / Human-centred intelligence</div><h2 style="font:500 clamp(2rem,4vw,3rem)/1.12 Manrope;margin:12px 0 16px">Powerful tools. <span class="gold">Human control.</span></h2><p class="muted">Trust is a product feature. Hakim Vahid should make it clear what data is used, which model or source contributed, what an agent is about to do and how a user can stop it.</p>
-    <ul class="list-check"><li>Explicit consent for sensitive data and location access</li><li>Role-based permissions and organization-level controls</li><li>Human approval for payments, bookings and external actions</li><li>Source citations, timestamps and uncertainty indicators</li><li>Data export, deletion workflows and retention controls</li><li>Audit trails for enterprise and agent activity</li></ul>
+  <div>
+    <div class="eyebrow" data-i18n="hum_eyebrow">05 / Human-centred intelligence</div>
+    <h2 style="font:500 clamp(2rem,4vw,3rem)/1.12 Manrope;margin:12px 0 16px" data-i18n-html="hum_title">Powerful tools. <span class="gold">Human control.</span></h2>
+    <p class="muted" data-i18n="hum_desc">Trust is a product feature. Hakim Vahid should make it clear what data is used, which model or source contributed, what an agent is about to do and how a user can stop it.</p>
+    <ul class="list-check">
+      <li data-i18n="hum_li_1">Explicit consent for sensitive data and location access</li>
+      <li data-i18n="hum_li_2">Role-based permissions and organization-level controls</li>
+      <li data-i18n="hum_li_3">Human approval for payments, bookings and external actions</li>
+      <li data-i18n="hum_li_4">Source citations, timestamps and uncertainty indicators</li>
+      <li data-i18n="hum_li_5">Data export, deletion workflows and retention controls</li>
+      <li data-i18n="hum_li_6">Audit trails for enterprise and agent activity</li>
+    </ul>
   </div>
-  <div class="visual"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="Team collaborating around a table"><div class="visual-caption">Designed for people, teams and institutions.</div></div>
+  <div class="visual"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="Team"><div class="visual-caption" data-i18n="hum_caption">Designed for people, teams and institutions.</div></div>
 </div></section>
-
 
 <section class="section" id="mission-control">
  <div class="container">
   <div class="section-head reveal">
-   <span class="eyebrow">Hakim Mission Control</span>
-   <h2>One command. <span class="gold">Coordinated intelligence.</span></h2>
-   <p>A unified command experience concept: explore a global intelligence view, test the assistant interaction, and inspect the proposed security layers. Live external data and AI execution require connected services.</p>
+   <span class="eyebrow" data-i18n="mc_eyebrow">Hakim Mission Control</span>
+   <h2 data-i18n-html="mc_title">One command. <span class="gold">Coordinated intelligence.</span></h2>
+   <p data-i18n="mc_desc">A unified command experience concept: explore a global intelligence view, test the assistant interaction, and inspect the proposed security layers. Live external data and AI execution require connected services.</p>
   </div>
   <div class="mc-grid">
    <div class="mc-panel reveal">
-    <div class="mc-head"><div><span class="eyebrow">Global intelligence</span><h3 style="margin:5px 0 0;font:600 1.15rem Manrope">Planetary signal view</h3></div><span class="live-pill">Visual demo</span></div>
+    <div class="mc-head"><div><span class="eyebrow" data-i18n="mc_glob_eyebrow">Global intelligence</span><h3 style="margin:5px 0 0;font:600 1.15rem Manrope" data-i18n="mc_glob_title">Planetary signal view</h3></div><span class="live-pill" data-i18n="mc_glob_demo">Visual demo</span></div>
     <div class="globe-stage" aria-label="Animated conceptual globe">
      <div class="globe"><i class="globe-point p1"></i><i class="globe-point p2"></i><i class="globe-point p3"></i></div><div class="globe-ring"></div>
-     <div class="globe-caption"><span>Hakim global network</span><span>Concept visualization</span></div>
+     <div class="globe-caption"><span data-i18n="mc_glob_net">Hakim global network</span><span data-i18n="mc_glob_concept">Concept visualization</span></div>
     </div>
     <div class="mc-stats">
-     <div class="mc-stat"><strong data-count="12">12</strong><span>Intelligence domains</span></div>
-     <div class="mc-stat"><strong data-count="3">3</strong><span>Interface languages</span></div>
-     <div class="mc-stat"><strong>24/7</strong><span>Designed availability target</span></div>
+     <div class="mc-stat"><strong data-count="12">12</strong><span data-i18n="mc_stat_1">Intelligence domains</span></div>
+     <div class="mc-stat"><strong data-count="3">3</strong><span data-i18n="mc_stat_2">Interface languages</span></div>
+     <div class="mc-stat"><strong>24/7</strong><span data-i18n="mc_stat_3">Designed availability target</span></div>
     </div>
    </div>
    <div class="mc-panel reveal">
-    <div class="mc-head"><div><span class="eyebrow">AI orchestration</span><h3 style="margin:5px 0 0;font:600 1.15rem Manrope">Hakim interactive core</h3></div><span class="feature-status">Local simulation</span></div>
+    <div class="mc-head"><div><span class="eyebrow" data-i18n="mc_ai_eyebrow">AI orchestration</span><h3 style="margin:5px 0 0;font:600 1.15rem Manrope" data-i18n="mc_ai_title">Hakim interactive core</h3></div><span class="feature-status" data-i18n="mc_ai_sim">Local simulation</span></div>
     <div class="hakim-core-wrap" id="coreWrap"><div class="hakim-core">H</div></div>
-    <div class="console-log" id="missionLog" aria-live="polite"><div>Hakim interface initialized.</div><div>Waiting for a demo command.</div><div>External model connection: not configured.</div></div>
-    <div class="mc-input-row"><input id="missionInput" type="text" maxlength="240" placeholder="Try: Analyze a clean-energy project" aria-label="Enter a demo command"><button id="missionSend" type="button">Run demo</button></div>
-    <p class="muted" style="font-size:.68rem;margin:9px 0 0">This interaction demonstrates the workflow only. It does not call an AI model or transmit your prompt.</p>
+    <div class="console-log" id="missionLog" aria-live="polite">
+      <div data-i18n="mc_log_1">Hakim interface initialized.</div>
+      <div data-i18n="mc_log_2">Waiting for a demo command.</div>
+      <div data-i18n="mc_log_3">External model connection: not configured.</div>
+    </div>
+    <div class="mc-input-row">
+      <input id="missionInput" type="text" maxlength="240" placeholder="Try: Analyze a clean-energy project" aria-label="Enter a demo command" data-i18n-placeholder="mc_placeholder">
+      <button id="missionSend" type="button" data-i18n="mc_btn">Run demo</button>
+    </div>
+    <p class="muted" style="font-size:.68rem;margin:9px 0 0" data-i18n="mc_notice">This interaction demonstrates the workflow only. It does not call an AI model or transmit your prompt.</p>
    </div>
-  </div>
- </div>
-</section>
-<section class="section" id="trust-center">
- <div class="container">
-  <div class="section-head reveal"><span class="eyebrow">Trust architecture</span><h2>Security designed <span class="gold">into every layer.</span></h2><p>A production security blueprint. These controls are design requirements, not a claim that this static front-end already implements them.</p></div>
-  <div class="security-matrix">
-   <div class="security-tile reveal"><div class="security-glyph">01</div><b>Identity & MFA</b><p>Secure sign-in, multi-factor authentication, SSO and account recovery.</p></div>
-   <div class="security-tile reveal"><div class="security-glyph">02</div><b>Role-based access</b><p>Least-privilege permissions for users, teams, administrators and agents.</p></div>
-   <div class="security-tile reveal"><div class="security-glyph">03</div><b>Encryption</b><p>TLS in transit, encrypted storage and managed secrets with key rotation.</p></div>
-   <div class="security-tile reveal"><div class="security-glyph">04</div><b>Audit & monitoring</b><p>Traceable events, anomaly alerts, operational metrics and incident workflows.</p></div>
-   <div class="security-tile reveal"><div class="security-glyph">05</div><b>Privacy controls</b><p>Data retention, export, deletion, consent and model-training preferences.</p></div>
-   <div class="security-tile reveal"><div class="security-glyph">06</div><b>Resilience</b><p>Backups, restore drills, rate limits, disaster recovery and abuse protection.</p></div>
   </div>
  </div>
 </section>
 
+<section class="section" id="trust-center">
+ <div class="container">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-i18n="sec_eyebrow">Trust architecture</span>
+    <h2 data-i18n-html="sec_title">Security designed <span class="gold">into every layer.</span></h2>
+    <p data-i18n="sec_desc">A production security blueprint. These controls are design requirements, not a claim that this static front-end already implements them.</p>
+  </div>
+  <div class="security-matrix">
+   <div class="security-tile reveal"><div class="security-glyph">01</div><b data-i18n="sec_1_t">Identity & MFA</b><p data-i18n="sec_1_d">Secure sign-in, multi-factor authentication, SSO and account recovery.</p></div>
+   <div class="security-tile reveal"><div class="security-glyph">02</div><b data-i18n="sec_2_t">Role-based access</b><p data-i18n="sec_2_d">Least-privilege permissions for users, teams, administrators and agents.</p></div>
+   <div class="security-tile reveal"><div class="security-glyph">03</div><b data-i18n="sec_3_t">Encryption</b><p data-i18n="sec_3_d">TLS in transit, encrypted storage and managed secrets with key rotation.</p></div>
+   <div class="security-tile reveal"><div class="security-glyph">04</div><b data-i18n="sec_4_t">Audit & monitoring</b><p data-i18n="sec_4_d">Traceable events, anomaly alerts, operational metrics and incident workflows.</p></div>
+   <div class="security-tile reveal"><div class="security-glyph">05</div><b data-i18n="sec_5_t">Privacy controls</b><p data-i18n="sec_5_d">Data retention, export, deletion, consent and model-training preferences.</p></div>
+   <div class="security-tile reveal"><div class="security-glyph">06</div><b data-i18n="sec_6_t">Resilience</b><p data-i18n="sec_6_d">Backups, restore drills, rate limits, disaster recovery and abuse protection.</p></div>
+  </div>
+ </div>
+</section>
 
 <section class="section hv-investor" id="investor-suite">
  <div class="container">
   <div class="section-head">
-   <div class="eyebrow">Capital & strategic partnerships / 05</div>
-   <h2>A serious framework for <span class="gold">investment conversations.</span></h2>
-   <p>Designed for investors, sovereign funds, research institutions and strategic partners. This is a presentation framework—not an offer of securities, a fundraising claim or verified financial performance.</p>
+   <div class="eyebrow" data-i18n="inv_eyebrow">Capital & strategic partnerships / 05</div>
+   <h2 data-i18n-html="inv_title">A serious framework for <span class="gold">investment conversations.</span></h2>
+   <p data-i18n="inv_desc">Designed for investors, sovereign funds, research institutions and strategic partners. This is a presentation framework—not an offer of securities, a fundraising claim or verified financial performance.</p>
   </div>
   <div class="hv-investor-grid">
    <article class="hv-investor-card hv-investor-lead">
-    <span class="hv-investor-index">01 / PROJECT ROOM</span>
+    <span class="hv-investor-index" data-i18n="inv_1_idx">01 / PROJECT ROOM</span>
     <div class="hv-investor-icon">◈</div>
-    <h3>One structured view of the opportunity</h3>
-    <p>Bring the problem, proposed solution, target users, product status, milestones and evidence into one reviewable project brief.</p>
-    <a href="#contact">Request a project briefing ↗</a>
+    <h3 data-i18n="inv_1_t">One structured view of the opportunity</h3>
+    <p data-i18n="inv_1_d">Bring the problem, proposed solution, target users, product status, milestones and evidence into one reviewable project brief.</p>
+    <a href="#contact" data-i18n="inv_1_link">Request a project briefing ↗</a>
    </article>
    <article class="hv-investor-card">
-    <span class="hv-investor-index">02 / DUE DILIGENCE</span><div class="hv-investor-icon">⌕</div>
-    <h3>Transparent assumptions</h3>
-    <p>Document market assumptions, technical dependencies, regulatory questions, execution risks and evidence gaps.</p>
-    <a href="#architecture">Review the architecture ↗</a>
+    <span class="hv-investor-index" data-i18n="inv_2_idx">02 / DUE DILIGENCE</span>
+    <div class="hv-investor-icon">⌕</div>
+    <h3 data-i18n="inv_2_t">Transparent assumptions</h3>
+    <p data-i18n="inv_2_d">Document market assumptions, technical dependencies, regulatory questions, execution risks and evidence gaps.</p>
+    <a href="#architecture" data-i18n="inv_2_link">Review the architecture ↗</a>
    </article>
    <article class="hv-investor-card">
-    <span class="hv-investor-index">03 / EXECUTION</span><div class="hv-investor-icon">◎</div>
-    <h3>Milestones that can be verified</h3>
-    <p>Define measurable product gates, acceptance criteria, ownership, timelines and proof of completion before announcing progress.</p>
-    <a href="#roadmap">Explore the roadmap ↗</a>
+    <span class="hv-investor-index" data-i18n="inv_3_idx">03 / EXECUTION</span>
+    <div class="hv-investor-icon">◎</div>
+    <h3 data-i18n="inv_3_t">Milestones that can be verified</h3>
+    <p data-i18n="inv_3_d">Define measurable product gates, acceptance criteria, ownership, timelines and proof of completion before announcing progress.</p>
+    <a href="#roadmap" data-i18n="inv_3_link">Explore the roadmap ↗</a>
    </article>
    <article class="hv-investor-card">
-    <span class="hv-investor-index">04 / IMPACT</span><div class="hv-investor-icon">✧</div>
-    <h3>Value beyond the interface</h3>
-    <p>Connect product outcomes to research productivity, institutional capability, responsible deployment and measurable user value.</p>
-    <a href="#contact">Discuss strategic alignment ↗</a>
+    <span class="hv-investor-index" data-i18n="inv_4_idx">04 / IMPACT</span>
+    <div class="hv-investor-icon">✧</div>
+    <h3 data-i18n="inv_4_t">Value beyond the interface</h3>
+    <p data-i18n="inv_4_d">Connect product outcomes to research productivity, institutional capability, responsible deployment and measurable user value.</p>
+    <a href="#contact" data-i18n="inv_4_link">Discuss strategic alignment ↗</a>
    </article>
   </div>
-  <div class="hv-investor-foot"><b>Investor-readiness checklist</b><span>Product evidence</span><span>Market validation</span><span>Financial model</span><span>Risk register</span><span>Governance</span><span>Milestone ownership</span></div>
-  <p class="hv-investor-disclaimer">Before external fundraising, populate this room with approved company information, a reviewed financial model, cap table, legal documents, product evidence and named points of contact. No revenue, valuation, investor commitments or deployment status are asserted here.</p>
+  <div class="hv-investor-foot">
+    <b data-i18n="inv_foot_t">Investor-readiness checklist</b>
+    <span data-i18n="inv_foot_1">Product evidence</span>
+    <span data-i18n="inv_foot_2">Market validation</span>
+    <span data-i18n="inv_foot_3">Financial model</span>
+    <span data-i18n="inv_foot_4">Risk register</span>
+    <span data-i18n="inv_foot_5">Governance</span>
+    <span data-i18n="inv_foot_6">Milestone ownership</span>
+  </div>
+  <p class="hv-investor-disclaimer" data-i18n="inv_disc">Before external fundraising, populate this room with approved company information, a reviewed financial model, cap table, legal documents, product evidence and named points of contact. No revenue, valuation, investor commitments or deployment status are asserted here.</p>
  </div>
 </section>
 
 <section class="section" id="architecture"><div class="container">
-  <div class="section-head"><div class="eyebrow">06 / Technology blueprint</div><h2>A modular foundation for <span class="gold">responsible scale.</span></h2><p>A proposed reference architecture. Final technology choices depend on product requirements, security review, cost, compliance and engineering validation.</p></div>
-  <div class="architecture">
-    <div class="arch-layer"><div class="arch-box"><strong>USER EXPERIENCE</strong><small>Web · Mobile · Enterprise · Accessibility · Localization</small></div></div><div class="arch-arrow">↓</div>
-    <div class="arch-layer"><div class="arch-box"><strong>IDENTITY & TRUST</strong><small>Authentication · Consent · RBAC · Policy · Audit</small></div><div class="arch-box"><strong>EDGE & API GATEWAY</strong><small>Routing · Rate limits · WAF · Request validation</small></div></div><div class="arch-arrow">↓</div>
-    <div class="arch-layer"><div class="arch-box primary"><strong>Hakim Vahid CORE</strong><small>Orchestration · Model routing · Context · Tool permissions</small></div></div><div class="arch-arrow">↓</div>
-    <div class="arch-layer"><div class="arch-box"><strong>MODEL FABRIC</strong><small>LLMs · Vision · Audio · Embeddings</small></div><div class="arch-box"><strong>AGENT RUNTIME</strong><small>Workflows · Sandboxing · Human approval</small></div><div class="arch-box"><strong>DOMAIN SERVICES</strong><small>Health · Earth · Finance · Mobility</small></div></div><div class="arch-arrow">↓</div>
-    <div class="arch-layer"><div class="arch-box"><strong>DATA & KNOWLEDGE</strong><small>SQL · Object storage · Vector search · Provenance</small></div><div class="arch-box"><strong>OBSERVABILITY</strong><small>Logs · Metrics · Traces · Evaluation</small></div><div class="arch-box"><strong>COMMERCE</strong><small>Plans · Billing · Entitlements · Invoices</small></div></div>
-    <div class="arch-caption">Conceptual architecture — not a statement that these systems are already deployed or integrated.</div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="arch_eyebrow">06 / Technology blueprint</div>
+    <h2 data-i18n-html="arch_title">A modular foundation for <span class="gold">responsible scale.</span></h2>
+    <p data-i18n="arch_desc">A proposed reference architecture. Final technology choices depend on product requirements, security review, cost, compliance and engineering validation.</p>
   </div>
-  <p class="fine" style="margin-top:17px">Implementation reference: <a class="gold" href="https://developers.cloudflare.com/workers/" target="_blank" rel="noopener">Cloudflare Workers documentation</a> and <a class="gold" href="https://developers.cloudflare.com/reference-architecture/architectures/security/" target="_blank" rel="noopener">Cloudflare security architecture</a>. These are possible infrastructure references, not an endorsement or confirmation of a Hakim Vahid deployment.</p>
+  <div class="architecture">
+    <div class="arch-layer"><div class="arch-box"><strong data-i18n="arch_l1_t">USER EXPERIENCE</strong><small data-i18n="arch_l1_d">Web · Mobile · Enterprise · Accessibility · Localization</small></div></div>
+    <div class="arch-arrow">↓</div>
+    <div class="arch-layer">
+      <div class="arch-box"><strong data-i18n="arch_l2_t">IDENTITY & TRUST</strong><small data-i18n="arch_l2_d">Authentication · Consent · RBAC · Policy · Audit</small></div>
+      <div class="arch-box"><strong data-i18n="arch_l2b_t">EDGE & API GATEWAY</strong><small data-i18n="arch_l2b_d">Routing · Rate limits · WAF · Request validation</small></div>
+    </div>
+    <div class="arch-arrow">↓</div>
+    <div class="arch-layer"><div class="arch-box primary"><strong data-i18n="arch_core_t">Hakim Vahid CORE</strong><small data-i18n="arch_core_d">Orchestration · Model routing · Context · Tool permissions</small></div></div>
+    <div class="arch-arrow">↓</div>
+    <div class="arch-layer">
+      <div class="arch-box"><strong data-i18n="arch_l3_t">MODEL FABRIC</strong><small data-i18n="arch_l3_d">LLMs · Vision · Audio · Embeddings</small></div>
+      <div class="arch-box"><strong data-i18n="arch_l3b_t">AGENT RUNTIME</strong><small data-i18n="arch_l3b_d">Workflows · Sandboxing · Human approval</small></div>
+      <div class="arch-box"><strong data-i18n="arch_l3c_t">DOMAIN SERVICES</strong><small data-i18n="arch_l3c_d">Health · Earth · Finance · Mobility</small></div>
+    </div>
+    <div class="arch-arrow">↓</div>
+    <div class="arch-layer">
+      <div class="arch-box"><strong data-i18n="arch_l4_t">DATA & KNOWLEDGE</strong><small data-i18n="arch_l4_d">SQL · Object storage · Vector search · Provenance</small></div>
+      <div class="arch-box"><strong data-i18n="arch_l4b_t">OBSERVABILITY</strong><small data-i18n="arch_l4b_d">Logs · Metrics · Traces · Evaluation</small></div>
+      <div class="arch-box"><strong data-i18n="arch_l4c_t">COMMERCE</strong><small data-i18n="arch_l4c_d">Plans · Billing · Entitlements · Invoices</small></div>
+    </div>
+    <div class="arch-caption" data-i18n="arch_caption">Conceptual architecture — not a statement that these systems are already deployed or integrated.</div>
+  </div>
 </div></section>
 
 <section class="section" id="roadmap"><div class="container">
-  <div class="section-head"><div class="eyebrow">07 / Delivery strategy</div><h2>Ambition needs <span class="gold">execution discipline.</span></h2><p>A credible roadmap separates working product capabilities from development work and long-term ambitions. Update these labels as engineering milestones are verified.</p></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="road_eyebrow">07 / Delivery strategy</div>
+    <h2 data-i18n-html="road_title">Ambition needs <span class="gold">execution discipline.</span></h2>
+    <p data-i18n="road_desc">A credible roadmap separates working product capabilities from development work and long-term ambitions. Update these labels as engineering milestones are verified.</p>
+  </div>
   <div class="roadmap">
-    <div class="road-card"><span class="tag live">Current foundation — verify</span><h3>FOUNDATION</h3><p>Core interface, account experience, model gateway, file workflows, usage controls, multilingual foundations and monitoring. Publish only the features that pass acceptance testing.</p></div>
-    <div class="road-card"><span class="tag build">In development</span><h3>INTEGRATION LAYER</h3><p>Model expansion, agent workflows, enterprise workspaces, trusted data connectors, billing integration, security hardening and operational dashboards.</p></div>
-    <div class="road-card"><span class="tag roadmap">Long-term roadmap</span><h3>GLOBAL INTELLIGENCE</h3><p>Digital twins, Earth intelligence, health and finance modules, mobility partnerships, smart infrastructure and sovereign or institutional deployments.</p></div>
+    <div class="road-card"><span class="tag live" data-i18n="road_tag_1">Current foundation — verify</span><h3 data-i18n="road_1_t">FOUNDATION</h3><p data-i18n="road_1_d">Core interface, account experience, model gateway, file workflows, usage controls, multilingual foundations and monitoring. Publish only the features that pass acceptance testing.</p></div>
+    <div class="road-card"><span class="tag build" data-i18n="road_tag_2">In development</span><h3 data-i18n="road_2_t">INTEGRATION LAYER</h3><p data-i18n="road_2_d">Model expansion, agent workflows, enterprise workspaces, trusted data connectors, billing integration, security hardening and operational dashboards.</p></div>
+    <div class="road-card"><span class="tag roadmap" data-i18n="road_tag_3">Long-term roadmap</span><h3 data-i18n="road_3_t">GLOBAL INTELLIGENCE</h3><p data-i18n="road_3_d">Digital twins, Earth intelligence, health and finance modules, mobility partnerships, smart infrastructure and sovereign or institutional deployments.</p></div>
   </div>
 </div></section>
 
 <section class="section" id="pricing"><div class="container">
-  <div class="section-head"><div class="eyebrow">08 / Business model</div><h2>A transparent <span class="gold">service ecosystem.</span></h2><p>Illustrative packaging only. Final prices, quotas, model access, payment methods, tax treatment and service levels must be defined before launch.</p></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="price_eyebrow">08 / Business model</div>
+    <h2 data-i18n-html="price_title">A transparent <span class="gold">service ecosystem.</span></h2>
+    <p data-i18n="price_desc">Illustrative packaging only. Final prices, quotas, model access, payment methods, tax treatment and service levels must be defined before launch.</p>
+  </div>
   <div class="grid pricing">
-    <div class="price-card"><span class="tag">Individuals</span><h3>ESSENTIAL</h3><div class="price">Free / Trial</div><p>Explore the core experience with clearly defined usage limits.</p><ul><li>Starter AI access</li><li>Basic file workflows</li><li>Community and help centre</li><li>Standard usage limits</li></ul><a class="btn btn-ghost" href="#contact">Join the waitlist</a></div>
-    <div class="price-card featured"><span class="tag">Power users</span><h3>PRO</h3><div class="price">Subscription</div><p>For creators, researchers and professionals who need higher capacity.</p><ul><li>Expanded model and tool access</li><li>Higher usage allowances</li><li>Advanced file and data workflows</li><li>Priority support options</li></ul><a class="btn btn-primary" href="#contact">Request Pro access</a></div>
-    <div class="price-card"><span class="tag">Organizations</span><h3>ENTERPRISE</h3><div class="price">Custom</div><p>For teams and institutions with governance and integration needs.</p><ul><li>Organization workspaces</li><li>Role-based access and audit</li><li>Custom API and integrations</li><li>Contracted support and SLA options</li></ul><a class="btn btn-ghost" href="#contact">Contact enterprise</a></div>
+    <div class="price-card">
+      <span class="tag" data-i18n="price_tag_1">Individuals</span>
+      <h3 data-i18n="price_1_t">ESSENTIAL</h3>
+      <div class="price" data-i18n="price_1_p">Free / Trial</div>
+      <p data-i18n="price_1_d">Explore the core experience with clearly defined usage limits.</p>
+      <ul>
+        <li data-i18n="price_1_l1">Starter AI access</li>
+        <li data-i18n="price_1_l2">Basic file workflows</li>
+        <li data-i18n="price_1_l3">Community and help centre</li>
+        <li data-i18n="price_1_l4">Standard usage limits</li>
+      </ul>
+      <a class="btn btn-ghost" href="#contact" data-i18n="price_1_btn">Join the waitlist</a>
+    </div>
+    <div class="price-card featured">
+      <span class="tag" data-i18n="price_tag_2">Power users</span>
+      <h3 data-i18n="price_2_t">PRO</h3>
+      <div class="price" data-i18n="price_2_p">Subscription</div>
+      <p data-i18n="price_2_d">For creators, researchers and professionals who need higher capacity.</p>
+      <ul>
+        <li data-i18n="price_2_l1">Expanded model and tool access</li>
+        <li data-i18n="price_2_l2">Higher usage allowances</li>
+        <li data-i18n="price_2_l3">Advanced file and data workflows</li>
+        <li data-i18n="price_2_l4">Priority support options</li>
+      </ul>
+      <a class="btn btn-primary" href="#contact" data-i18n="price_2_btn">Request Pro access</a>
+    </div>
+    <div class="price-card">
+      <span class="tag" data-i18n="price_tag_3">Organizations</span>
+      <h3 data-i18n="price_3_t">ENTERPRISE</h3>
+      <div class="price" data-i18n="price_3_p">Custom</div>
+      <p data-i18n="price_3_d">For teams and institutions with governance and integration needs.</p>
+      <ul>
+        <li data-i18n="price_3_l1">Organization workspaces</li>
+        <li data-i18n="price_3_l2">Role-based access and audit</li>
+        <li data-i18n="price_3_l3">Custom API and integrations</li>
+        <li data-i18n="price_3_l4">Contracted support and SLA options</li>
+      </ul>
+      <a class="btn btn-ghost" href="#contact" data-i18n="price_3_btn">Contact enterprise</a>
+    </div>
   </div>
-  <p class="fine" style="margin-top:15px">Do not advertise “unlimited” access, “100+ models”, crypto-only payments or guaranteed service levels unless these are contractually and technically available.</p>
+  <p class="fine" style="margin-top:15px" data-i18n="price_fine">Do not advertise “unlimited” access, “100+ models”, crypto-only payments or guaranteed service levels unless these are contractually and technically available.</p>
 </div></section>
 
 <section class="section"><div class="container">
-  <div class="section-head"><div class="eyebrow">09 / Global experience</div><h2>Local language. <span class="gold">Global perspective.</span></h2><p>Language is not a decorative switch. Each supported language needs complete interface translation, correct typography, right-to-left layout where appropriate, localized dates and tested user journeys.</p></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="glob_eyebrow">09 / Global experience</div>
+    <h2 data-i18n-html="glob_title">Local language. <span class="gold">Global perspective.</span></h2>
+    <p data-i18n="glob_desc">Language is not a decorative switch. Each supported language needs complete interface translation, correct typography, right-to-left layout where appropriate, localized dates and tested user journeys.</p>
+  </div>
   <div class="grid feature-grid">
-    <div class="card"><div class="card-body"><span class="tag live">Interface direction</span><h3>ENGLISH</h3><p>International product language, left-to-right layout and global terminology.</p></div></div>
-    <div class="card"><div class="card-body"><span class="tag build">RTL localization</span><h3>فارسی</h3><p>رابط فارسی با چینش راست‌به‌چپ، قلم مناسب و تجربه بومی‌سازی‌شده.</p></div></div>
-    <div class="card"><div class="card-body"><span class="tag build">RTL localization</span><h3>العربية</h3><p>واجهة عربية من اليمين إلى اليسار مع دعم الخطوط والمصطلحات المحلية.</p></div></div>
-    <div class="card"><div class="card-body"><span class="tag roadmap">Expansion</span><h3>MORE LANGUAGES</h3><p>Future localization based on user demand, quality review and regional support.</p></div></div>
+    <div class="card"><div class="card-body"><span class="tag live" data-i18n="glob_tag_1">Interface direction</span><h3 data-i18n="glob_1_t">ENGLISH</h3><p data-i18n="glob_1_d">International product language, left-to-right layout and global terminology.</p></div></div>
+    <div class="card"><div class="card-body"><span class="tag build" data-i18n="glob_tag_2">RTL localization</span><h3 data-i18n="glob_2_t">فارسی</h3><p data-i18n="glob_2_d">رابط فارسی با چینش راست‌به‌چپ، قلم مناسب و تجربه بومی‌سازی‌شده.</p></div></div>
+    <div class="card"><div class="card-body"><span class="tag build" data-i18n="glob_tag_3">RTL localization</span><h3 data-i18n="glob_3_t">العربية</h3><p data-i18n="glob_3_d">واجهة عربية من اليمين إلى اليسار مع دعم الخطوط والمصطلحات المحلية.</p></div></div>
+    <div class="card"><div class="card-body"><span class="tag roadmap" data-i18n="glob_tag_4">Expansion</span><h3 data-i18n="glob_4_t">MORE LANGUAGES</h3><p data-i18n="glob_4_d">Future localization based on user demand, quality review and regional support.</p></div></div>
   </div>
 </div></section>
 
 <section class="section"><div class="container">
-  <div class="section-head"><div class="eyebrow">10 / Frequently asked questions</div><h2>Clarity builds <span class="gold">confidence.</span></h2></div>
+  <div class="section-head">
+    <div class="eyebrow" data-i18n="faq_eyebrow">10 / Frequently asked questions</div>
+    <h2 data-i18n-html="faq_title">Clarity builds <span class="gold">confidence.</span></h2>
+  </div>
   <div class="faq">
-    <details><summary>Is every module available today?</summary><p>No. This page presents a product vision and proposed portfolio. The live product should clearly identify features that are available, in development or planned. Only tested and deployed capabilities should be described as live.</p></details>
-    <details><summary>Does Hakim Vahid provide real-time emergency alerts?</summary><p>Only when connected to reliable, authorized and monitored data providers. Emergency information must include source, timestamp, geographic coverage and links to official authorities. Users should always follow local emergency services.</p></details>
-    <details><summary>Can organizations deploy private workflows?</summary><p>This is an enterprise product direction. It requires dedicated identity integration, access controls, data isolation, auditability, contractual terms and security validation.</p></details>
-    <details><summary>Does Hakim Vahid replace doctors, financial advisers or public authorities?</summary><p>No. Health, finance and emergency-related features should provide informational assistance with clear limitations and appropriate professional or official oversight.</p></details>
-    <details><summary>How are user data and privacy handled?</summary><p>The production service should publish a plain-language privacy notice, data retention schedule, subprocessors, security controls, user rights and regional compliance approach before collecting sensitive information.</p></details>
+    <details>
+      <summary data-i18n="faq_1_q">Is every module available today?</summary>
+      <p data-i18n="faq_1_a">No. This page presents a product vision and proposed portfolio. The live product should clearly identify features that are available, in development or planned. Only tested and deployed capabilities should be described as live.</p>
+    </details>
+    <details>
+      <summary data-i18n="faq_2_q">Does Hakim Vahid provide real-time emergency alerts?</summary>
+      <p data-i18n="faq_2_a">Only when connected to reliable, authorized and monitored data providers. Emergency information must include source, timestamp, geographic coverage and links to official authorities. Users should always follow local emergency services.</p>
+    </details>
+    <details>
+      <summary data-i18n="faq_3_q">Can organizations deploy private workflows?</summary>
+      <p data-i18n="faq_3_a">This is an enterprise product direction. It requires dedicated identity integration, access controls, data isolation, auditability, contractual terms and security validation.</p>
+    </details>
+    <details>
+      <summary data-i18n="faq_4_q">Does Hakim Vahid replace doctors, financial advisers or public authorities?</summary>
+      <p data-i18n="faq_4_a">No. Health, finance and emergency-related features should provide informational assistance with clear limitations and appropriate professional or official oversight.</p>
+    </details>
+    <details>
+      <summary data-i18n="faq_5_q">How are user data and privacy handled?</summary>
+      <p data-i18n="faq_5_a">The production service should publish a plain-language privacy notice, data retention schedule, subprocessors, security controls, user rights and regional compliance approach before collecting sensitive information.</p>
+    </details>
   </div>
 </div></section>
 
 <section class="section" id="contact"><div class="container">
-  <div class="cta"><div class="eyebrow">The next era of connected intelligence</div><h2>Build with clarity. Scale with purpose.</h2><p>Hakim Vahid is an ambitious platform vision. The next step is to turn the strongest use cases into reliable products, validate demand and build partnerships that create measurable value.</p><a class="btn btn-primary" href="mailto:Vahidmaykoltarh@yahoo.com?subject=Hakim%20Vahid%20Partnership%20Enquiry">Discuss a partnership</a></div>
+  <div class="cta">
+    <div class="eyebrow" data-i18n="cta_eyebrow">The next era of connected intelligence</div>
+    <h2 data-i18n="cta_title">Build with clarity. Scale with purpose.</h2>
+    <p data-i18n="cta_desc">Hakim Vahid is an ambitious platform vision. The next step is to turn the strongest use cases into reliable products, validate demand and build partnerships that create measurable value.</p>
+    <a class="btn btn-primary" href="mailto:hakim-vahid@proton.me?subject=Hakim%20Vahid%20Partnership%20Enquiry" data-i18n="cta_btn">Discuss a partnership</a>
+  </div>
 </div></section>
 </main>
 
 <footer><div class="container">
   <div class="footer-grid">
-    <div><a class="brand" href="#home"><span class="brand-mark"><span>H</span></span><span>HAKIM VAHID</span></a><p style="max-width:280px;margin-top:18px">The intelligence behind everything. A unified ecosystem vision for people, teams and institutions.</p></div>
-    <div><h4>Platform</h4><a href="#platform">Creation & productivity</a><a href="#modules">Intelligence modules</a><a href="#command">Global command center</a></div>
-    <div><h4>Company</h4><a href="#roadmap">Roadmap</a><a href="#architecture">Technology</a><a href="#contact">Partnerships</a></div>
-    <div><h4>Trust</h4><a href="#architecture">Security by design</a><a href="#contact">Privacy information</a><a href="#contact">Enterprise enquiries</a></div>
+    <div>
+      <a class="brand" href="#home"><span class="brand-mark"><span>H</span></span><span data-i18n="brand">HAKIM VAHID</span></a>
+      <p style="max-width:280px;margin-top:18px" data-i18n="foot_desc">The intelligence behind everything. A unified ecosystem vision for people, teams and institutions.</p>
+    </div>
+    <div>
+      <h4 data-i18n="foot_h_1">Platform</h4>
+      <a href="#platform" data-i18n="foot_l_1_1">Creation & productivity</a>
+      <a href="#modules" data-i18n="foot_l_1_2">Intelligence modules</a>
+      <a href="#command" data-i18n="foot_l_1_3">Global command center</a>
+    </div>
+    <div>
+      <h4 data-i18n="foot_h_2">Company</h4>
+      <a href="#roadmap" data-i18n="foot_l_2_1">Roadmap</a>
+      <a href="#architecture" data-i18n="foot_l_2_2">Technology</a>
+      <a href="#contact" data-i18n="foot_l_2_3">Partnerships</a>
+    </div>
+    <div>
+      <h4 data-i18n="foot_h_3">Trust</h4>
+      <a href="#architecture" data-i18n="foot_l_3_1">Security by design</a>
+      <a href="#contact" data-i18n="foot_l_3_2">Privacy information</a>
+      <a href="#contact" data-i18n="foot_l_3_3">Enterprise enquiries</a>
+    </div>
   </div>
-  <div class="footer-bottom"><span>© <span id="year"></span> Hakim Vahid. All rights reserved.</span><span>Concept website · Product claims must be verified before publication.</span></div>
+  <div class="footer-bottom">
+    <span data-i18n="copyright">© <span id="year"></span> Hakim Vahid. All rights reserved.</span>
+    <span data-i18n="footer_creator">Founder & Architect: Vahid Nezamivand Chegane</span>
+    <span data-i18n="footer_desc">Concept website · Product claims must be verified before publication.</span>
+  </div>
 </div></footer>
 
 <div class="modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box">
-  <button class="modal-close" id="closeModal" aria-label="Close">×</button><h3 id="modalTitle">Welcome to Hakim Vahid</h3><p class="muted" id="modalIntro" style="font-size:.84rem">This is a front-end demonstration. Connect a secure authentication provider before production use.</p>
-  <form id="demoForm"><label for="email">Email address</label><input id="email" type="email" placeholder="you@example.com" required><div id="passwordWrap"><label for="password">Password</label><input id="password" type="password" minlength="8" placeholder="At least 8 characters" required></div><button class="btn btn-primary" type="submit" style="width:100%;margin-top:18px" id="modalSubmit">Continue</button></form>
-  <div class="notice">Demo only — no account is created and no information is transmitted.</div>
+  <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+  <h3 id="modalTitle">Welcome to Hakim Vahid</h3>
+  <p class="muted" id="modalIntro" style="font-size:.84rem">This is a front-end demonstration. Connect a secure authentication provider before production use.</p>
+  <form id="demoForm">
+    <label for="email" data-i18n="modal_email_label">Email address</label>
+    <input id="email" type="email" placeholder="you@example.com" required>
+    <div id="passwordWrap">
+      <label for="password" data-i18n="modal_pass_label">Password</label>
+      <input id="password" type="password" minlength="8" placeholder="At least 8 characters" required data-i18n-placeholder="modal_pass_placeholder">
+    </div>
+    <button class="btn btn-primary" type="submit" style="width:100%;margin-top:18px" id="modalSubmit" data-i18n="modal_submit">Continue</button>
+  </form>
+  <div class="notice" data-i18n="modal_notice">Demo only — no account is created and no information is transmitted.</div>
 </div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-const translations={
-en:{nav_platform:"Platform",nav_command:"Global command",nav_arch:"Architecture",nav_roadmap:"Roadmap",nav_ecosystem:"Ecosystem",login:"Log in",register:"Create account",hero_eyebrow:"A unified intelligence ecosystem",hero_sub:"One intelligence universe. Infinite ways to think, build and discover.",hero_copy:"Hakim Vahid is envisioned as a unified intelligence universe — bringing research, creation, documents, data, enterprise workflows and human expertise into one elegant command environment.",explore:"Explore the ecosystem",architecture_btn:"Explore the architecture",meta_ecosystem:"Connected ecosystem",meta_reach:"Designed for global reach",meta_arch:"API-first architecture vision"},
-fa:{nav_platform:"پلتفرم",nav_command:"مرکز فرماندهی جهانی",nav_arch:"معماری",nav_roadmap:"نقشه راه",nav_ecosystem:"اکوسیستم",login:"ورود",register:"ایجاد حساب",hero_eyebrow:"یک اکوسیستم یکپارچه هوشمندی",hero_sub:"یک هوشمندی. یک اکوسیستم. تأثیر جهانی.",hero_copy:"حکیم AI مدل‌های پیشرفته هوش مصنوعی، ابزارهای خلاقانه، گردش‌کارهای دانشی و خدمات داده جهانی را در تجربه‌ای یکپارچه گرد هم می‌آورد؛ برای افراد، سازندگان و سازمان‌ها.",explore:"کاوش در اکوسیستم",architecture_btn:"مشاهده معماری",meta_ecosystem:"اکوسیستم متصل",meta_reach:"طراحی‌شده برای دسترسی جهانی",meta_arch:"چشم‌انداز معماری API محور"},
-ar:{nav_platform:"المنصة",nav_command:"مركز القيادة العالمي",nav_arch:"البنية التقنية",nav_roadmap:"خارطة الطريق",nav_ecosystem:"النظام البيئي",login:"تسجيل الدخول",register:"إنشاء حساب",hero_eyebrow:"منظومة ذكاء موحدة",hero_sub:"ذكاء واحد. منظومة واحدة. أثر عالمي.",hero_copy:"تجمع حكيم AI نماذج الذكاء الاصطناعي المتقدمة والأدوات الإبداعية وسير المعرفة وخدمات البيانات العالمية في تجربة موحدة للأفراد والمطورين والمؤسسات.",explore:"استكشف المنظومة",architecture_btn:"استكشف البنية التقنية",meta_ecosystem:"منظومة مترابطة",meta_reach:"مصممة للوصول العالمي",meta_arch:"رؤية بنية تعتمد على واجهات API"}
+const translations = {
+  en: {
+    brand: "HAKIM VAHID", nav_flight: "Flight Deck", nav_platform: "Platform", nav_command: "Global command", nav_arch: "Architecture", nav_roadmap: "Roadmap", nav_investors: "Investors", nav_ecosystem: "Ecosystem", login: "Log in", register: "Create account", menu: "MENU",
+    hero_eyebrow: "A unified intelligence ecosystem", hero_title: "INTELLIGENCE<br><span>BEYOND TOMORROW.</span>", hero_sub: "One intelligence universe. Infinite ways to think, build and discover.", hero_copy: "Hakim Vahid is envisioned as a unified intelligence universe — bringing research, creation, documents, data, enterprise workflows and human expertise into one elegant command environment.", explore: "Explore the ecosystem", architecture_btn: "Explore the architecture", meta_one: "ONE", meta_ecosystem: "Connected ecosystem", meta_global: "GLOBAL", meta_reach: "Designed for global reach", meta_modular: "MODULAR", meta_arch: "API-first architecture vision",
+    fd_kicker: "HAKIM VAHID / NEXT-GENERATION INTELLIGENCE INTERFACE", fd_title: "WELCOME TO THE <span>INTELLIGENCE FLIGHT DECK</span>", fd_lead: "A glass-interface command environment for people shaping what comes next — scientists, builders, institutions, investors and curious minds.", fd_side_eyebrow: "01 / Knowledge systems", fd_side_title: "THINK. DISCOVER. VALIDATE.", fd_side_desc: "Move from a complex question to a structured path of research, evidence, analysis and communication.", fd_list_1: "Research & literature intelligence", fd_list_2: "Scientific document workflows", fd_list_3: "Data, charts & evidence synthesis", fd_list_4: "Multilingual knowledge access", fd_core_1: "HAKIM", fd_core_2: "VAHID / CORE", fd_node_1: "RESEARCH", fd_node_2: "DOCUMENTS", fd_node_3: "CAPITAL", fd_node_4: "ENTERPRISE", fd_node_5: "CREATION", fd_node_6: "DATA LAB", fd_node_7: "TRUST & SAFETY", fd_node_8: "GLOBAL VIEW", fd_cat: "SELECTED MODULE / 01", fd_name: "Research Intelligence", fd_desc: "Explore scientific literature, organize evidence, compare hypotheses and turn complex questions into clear research pathways.", fd_link: "Explore platform capabilities ↗", fd_chip_1: "MULTI-DOMAIN BY DESIGN", fd_chip_2: "HUMAN-LED DECISIONS", fd_chip_3: "MODULAR AI ECOSYSTEM", fd_chip_4: "BUILT FOR GLOBAL COLLABORATION",
+    route_eyebrow: "YOUR ROUTE THROUGH HAKIM", route_caption: "A clear path from first contact to institutional partnership", route_1_t: "Discover", route_1_d: "Explore the intelligence suite", route_2_t: "Experience", route_2_d: "Test the interactive concept", route_3_t: "Understand", route_3_d: "Review the system blueprint", route_4_t: "Evaluate", route_4_d: "Inspect the capital framework", route_5_t: "Connect", route_5_d: "Start a serious conversation",
+    aud_eyebrow: "An ecosystem for people who move the world", aud_title: "From <span class='gold'>discovery</span> to real-world impact.", aud_desc: "A shared workspace vision where deep expertise, practical tools and responsible capital can meet — without confusing a concept preview with a deployed service.", aud_1_t: "SCIENTISTS & RESEARCHERS", aud_1_d: "Evidence workflows, literature mapping, manuscript support, data interpretation and collaboration spaces.", aud_2_t: "INVESTORS & CAPITAL PARTNERS", aud_2_d: "Structured project rooms, due-diligence checklists, transparent assumptions, milestones and impact narratives.", aud_3_t: "FOUNDERS & INSTITUTIONS", aud_3_d: "Strategy, planning, document operations, team knowledge and decision-support workflows.", aud_4_t: "CREATORS & BUILDERS", aud_4_d: "Writing, visual ideation, prototyping, analysis and connected creative workflows.", aud_note: "The flight deck and module selector are interactive product-concept interfaces. AI execution, live data, secure accounts, document vaults, investor verification and financial services require production integrations, governance and independent validation.",
+    trust_1_t: "AI ORCHESTRATION", trust_1_d: "Multi-model routing and task coordination", trust_2_t: "HUMAN-CENTRED", trust_2_d: "Consent, oversight and user control", trust_3_t: "GLOBAL BY DESIGN", trust_3_d: "Localization and regional data awareness", trust_4_t: "MODULAR PLATFORM", trust_4_d: "Services that can evolve independently",
+    plat_eyebrow: "01 / The platform", plat_title: "One platform. <span class='gold'>Many dimensions</span> of intelligence.", plat_desc: "Hakim Vahid is envisioned as a connected suite of tools that helps people create, reason, research, protect, plan and operate. Each module can be developed and integrated on its own roadmap.", plat_1_tag: "Core module", plat_1_t: "OMNI CHAT & REASONING", plat_1_d: "Multi-model conversations, structured reasoning, coding assistance, document understanding and multilingual workflows.", plat_2_tag: "Creative suite", plat_2_t: "VISUAL GENESIS", plat_2_d: "Image concepts, visual ideation, storyboards, design workflows and video-generation integrations where licensed services are available.", plat_3_tag: "Creative suite", plat_3_t: "SONIC STUDIO", plat_3_d: "Original music and sound workflows, audio editing assistance, production tools and consent-based voice technologies.", plat_4_tag: "Productivity", plat_4_t: "DATA FORGE", plat_4_d: "Spreadsheet analysis, formula assistance, PDF extraction, reporting, visualization and presentation generation.",
+    cmd_eyebrow: "02 / Global command center", cmd_title: "A clearer view of a <span class='gold'>complex world.</span>", cmd_desc: "A unified situational-awareness workspace can bring trusted external data, alerts and operational context together. The panel below is a design preview, not a live feed.", cmd_map_label: "GLOBAL VIEW / CONCEPTUAL INTERFACE", cmd_side_eyebrow: "Unified intelligence layer", cmd_side_title: "OMNI-DASHBOARD", cmd_side_desc: "A single operational surface for signals that matter — with source attribution, timestamps and confidence indicators.", cmd_m_1_t: "EARTH", cmd_m_1_d: "Weather, hazards and environment", cmd_m_2_t: "CITY", cmd_m_2_d: "Mobility and urban systems", cmd_m_3_t: "ASSETS", cmd_m_3_d: "Energy and infrastructure", cmd_m_4_t: "INSIGHT", cmd_m_4_d: "AI-assisted analysis", cmd_s_1_t: "Weather and severe alerts", cmd_s_1_d: "External data integration", cmd_s_2_t: "Air quality and fire monitoring", cmd_s_2_d: "External data integration", cmd_s_3_t: "Traffic and transit status", cmd_s_3_d: "Provider-dependent", cmd_s_4_t: "Travel and itinerary intelligence", cmd_s_4_d: "Booking partner required", cmd_disclaimer: "Safety-critical alerts must come from authoritative agencies and validated feeds. Hakim Vahid should explain and route information, never replace official emergency instructions.",
+    rw_caption: "Cities, systems and people — connected intelligently.", rw_eyebrow: "03 / Intelligence for the real world", rw_title: "From digital workspaces to <span class='gold'>physical infrastructure.</span>", rw_desc: "The platform vision extends beyond chat. Hakim Vahid can become an interface for understanding complex systems, coordinating specialist tools and supporting human decisions.", rw_li_1: "Smart city operations and mobility intelligence", rw_li_2: "Digital twins for infrastructure planning and simulation", rw_li_3: "Energy, water and environmental monitoring", rw_li_4: "Disaster preparedness and resilience workflows", rw_li_5: "Enterprise knowledge and operational copilots", rw_btn: "Discover intelligence modules",
+    mod_eyebrow: "04 / Intelligence modules", mod_title: "Specialized intelligence. <span class='gold'>One experience.</span>", mod_desc: "These modules define a long-term product portfolio. Each requires dedicated domain partners, validated data, clear governance and production engineering before being marketed as operational.", mod_tag: "Planned module", mod_tag_partner: "Partner integration", mod_1_t: "CYBER SHIELD", mod_1_d: "Security posture insights, suspicious-activity triage, file-risk workflows, identity protection guidance and incident response coordination.", mod_2_t: "DIGITAL TWIN", mod_2_d: "Scenario modelling for cities, buildings, utilities and industrial assets using connected sensor and geospatial data.", mod_3_t: "HEALTH INTELLIGENCE", mod_3_d: "Health-record organization, lab-result explanations and appointment preparation with privacy controls and clinical boundaries.", mod_4_t: "FINANCIAL INTELLIGENCE", mod_4_d: "Market research, portfolio education, financial scenario analysis and risk reporting — not a substitute for licensed advice.", mod_5_t: "EARTH INTELLIGENCE", mod_5_d: "Earth observation, environmental indicators, wildfire and flood awareness, air-quality context and climate-risk insights.", mod_6_t: "AUTONOMOUS AGENTS", mod_6_d: "Permissioned agents for multi-step research, document workflows, project coordination and enterprise process automation.", mod_7_t: "KNOWLEDGE HUB", mod_7_d: "Research assistance, source-grounded learning, literature reviews, tutoring workflows and multilingual knowledge spaces.", mod_8_t: "ENERGY & RESILIENCE", mod_8_d: "Energy-system analytics, demand insights, asset monitoring and resilience planning for critical infrastructure operators.", mod_9_t: "TRAVEL & MOBILITY", mod_9_d: "Trip planning, transport comparison, itinerary management and booking handoffs through authorized providers.",
+    hum_eyebrow: "05 / Human-centred intelligence", hum_title: "Powerful tools. <span class='gold'>Human control.</span>", hum_desc: "Trust is a product feature. Hakim Vahid should make it clear what data is used, which model or source contributed, what an agent is about to do and how a user can stop it.", hum_li_1: "Explicit consent for sensitive data and location access", hum_li_2: "Role-based permissions and organization-level controls", hum_li_3: "Human approval for payments, bookings and external actions", hum_li_4: "Source citations, timestamps and uncertainty indicators", hum_li_5: "Data export, deletion workflows and retention controls", hum_li_6: "Audit trails for enterprise and agent activity", hum_caption: "Designed for people, teams and institutions.",
+    mc_eyebrow: "Hakim Mission Control", mc_title: "One command. <span class='gold'>Coordinated intelligence.</span>", mc_desc: "A unified command experience concept: explore a global intelligence view, test the assistant interaction, and inspect the proposed security layers. Live external data and AI execution require connected services.", mc_glob_eyebrow: "Global intelligence", mc_glob_title: "Planetary signal view", mc_glob_demo: "Visual demo", mc_glob_net: "Hakim global network", mc_glob_concept: "Concept visualization", mc_stat_1: "Intelligence domains", mc_stat_2: "Interface languages", mc_stat_3: "Designed availability target", mc_ai_eyebrow: "AI orchestration", mc_ai_title: "Hakim interactive core", mc_ai_sim: "Local simulation", mc_log_1: "Hakim interface initialized.", mc_log_2: "Waiting for a demo command.", mc_log_3: "External model connection: not configured.", mc_placeholder: "Try: Analyze a clean-energy project", mc_btn: "Run demo", mc_notice: "This interaction demonstrates the workflow only. It does not call an AI model or transmit your prompt.",
+    sec_eyebrow: "Trust architecture", sec_title: "Security designed <span class='gold'>into every layer.</span>", sec_desc: "A production security blueprint. These controls are design requirements, not a claim that this static front-end already implements them.", sec_1_t: "Identity & MFA", sec_1_d: "Secure sign-in, multi-factor authentication, SSO and account recovery.", sec_2_t: "Role-based access", sec_2_d: "Least-privilege permissions for users, teams, administrators and agents.", sec_3_t: "Encryption", sec_3_d: "TLS in transit, encrypted storage and managed secrets with key rotation.", sec_4_t: "Audit & monitoring", sec_4_d: "Traceable events, anomaly alerts, operational metrics and incident workflows.", sec_5_t: "Privacy controls", sec_5_d: "Data retention, export, deletion, consent and model-training preferences.", sec_6_t: "Resilience", sec_6_d: "Backups, restore drills, rate limits, disaster recovery and abuse protection.",
+    inv_eyebrow: "Capital & strategic partnerships / 05", inv_title: "A serious framework for <span class='gold'>investment conversations.</span>", inv_desc: "Designed for investors, sovereign funds, research institutions and strategic partners. This is a presentation framework—not an offer of securities, a fundraising claim or verified financial performance.", inv_1_idx: "01 / PROJECT ROOM", inv_1_t: "One structured view of the opportunity", inv_1_d: "Bring the problem, proposed solution, target users, product status, milestones and evidence into one reviewable project brief.", inv_1_link: "Request a project briefing ↗", inv_2_idx: "02 / DUE DILIGENCE", inv_2_t: "Transparent assumptions", inv_2_d: "Document market assumptions, technical dependencies, regulatory questions, execution risks and evidence gaps.", inv_2_link: "Review the architecture ↗", inv_3_idx: "03 / EXECUTION", inv_3_t: "Milestones that can be verified", inv_3_d: "Define measurable product gates, acceptance criteria, ownership, timelines and proof of completion before announcing progress.", inv_3_link: "Explore the roadmap ↗", inv_4_idx: "04 / IMPACT", inv_4_t: "Value beyond the interface", inv_4_d: "Connect product outcomes to research productivity, institutional capability, responsible deployment and measurable user value.", inv_4_link: "Discuss strategic alignment ↗", inv_foot_t: "Investor-readiness checklist", inv_foot_1: "Product evidence", inv_foot_2: "Market validation", inv_foot_3: "Financial model", inv_foot_4: "Risk register", inv_foot_5: "Governance", inv_foot_6: "Milestone ownership", inv_disc: "Before external fundraising, populate this room with approved company information, a reviewed financial model, cap table, legal documents, product evidence and named points of contact. No revenue, valuation, investor commitments or deployment status are asserted here.",
+    arch_eyebrow: "06 / Technology blueprint", arch_title: "A modular foundation for <span class='gold'>responsible scale.</span>", arch_desc: "A proposed reference architecture. Final technology choices depend on product requirements, security review, cost, compliance and engineering validation.", arch_l1_t: "USER EXPERIENCE", arch_l1_d: "Web · Mobile · Enterprise · Accessibility · Localization", arch_l2_t: "IDENTITY & TRUST", arch_l2_d: "Authentication · Consent · RBAC · Policy · Audit", arch_l2b_t: "EDGE & API GATEWAY", arch_l2b_d: "Routing · Rate limits · WAF · Request validation", arch_core_t: "Hakim Vahid CORE", arch_core_d: "Orchestration · Model routing · Context · Tool permissions", arch_l3_t: "MODEL FABRIC", arch_l3_d: "LLMs · Vision · Audio · Embeddings", arch_l3b_t: "AGENT RUNTIME", arch_l3b_d: "Workflows · Sandboxing · Human approval", arch_l3c_t: "DOMAIN SERVICES", arch_l3c_d: "Health · Earth · Finance · Mobility", arch_l4_t: "DATA & KNOWLEDGE", arch_l4_d: "SQL · Object storage · Vector search · Provenance", arch_l4b_t: "OBSERVABILITY", arch_l4b_d: "Logs · Metrics · Traces · Evaluation", arch_l4c_t: "COMMERCE", arch_l4c_d: "Plans · Billing · Entitlements · Invoices", arch_caption: "Conceptual architecture — not a statement that these systems are already deployed or integrated.",
+    road_eyebrow: "07 / Delivery strategy", road_title: "Ambition needs <span class='gold'>execution discipline.</span>", road_desc: "A credible roadmap separates working product capabilities from development work and long-term ambitions. Update these labels as engineering milestones are verified.", road_tag_1: "Current foundation — verify", road_1_t: "FOUNDATION", road_1_d: "Core interface, account experience, model gateway, file workflows, usage controls, multilingual foundations and monitoring. Publish only the features that pass acceptance testing.", road_tag_2: "In development", road_2_t: "INTEGRATION LAYER", road_2_d: "Model expansion, agent workflows, enterprise workspaces, trusted data connectors, billing integration, security hardening and operational dashboards.", road_tag_3: "Long-term roadmap", road_3_t: "GLOBAL INTELLIGENCE", road_3_d: "Digital twins, Earth intelligence, health and finance modules, mobility partnerships, smart infrastructure and sovereign or institutional deployments.",
+    price_eyebrow: "08 / Business model", price_title: "A transparent <span class='gold'>service ecosystem.</span>", price_desc: "Illustrative packaging only. Final prices, quotas, model access, payment methods, tax treatment and service levels must be defined before launch.", price_tag_1: "Individuals", price_1_t: "ESSENTIAL", price_1_p: "Free / Trial", price_1_d: "Explore the core experience with clearly defined usage limits.", price_1_l1: "Starter AI access", price_1_l2: "Basic file workflows", price_1_l3: "Community and help centre", price_1_l4: "Standard usage limits", price_1_btn: "Join the waitlist", price_tag_2: "Power users", price_2_t: "PRO", price_2_p: "Subscription", price_2_d: "For creators, researchers and professionals who need higher capacity.", price_2_l1: "Expanded model and tool access", price_2_l2: "Higher usage allowances", price_2_l3: "Advanced file and data workflows", price_2_l4: "Priority support options", price_2_btn: "Request Pro access", price_tag_3: "Organizations", price_3_t: "ENTERPRISE", price_3_p: "Custom", price_3_d: "For teams and institutions with governance and integration needs.", price_3_l1: "Organization workspaces", price_3_l2: "Role-based access and audit", price_3_l3: "Custom API and integrations", price_3_l4: "Contracted support and SLA options", price_3_btn: "Contact enterprise", price_fine: "Do not advertise “unlimited” access, “100+ models”, crypto-only payments or guaranteed service levels unless these are contractually and technically available.",
+    glob_eyebrow: "09 / Global experience", glob_title: "Local language. <span class='gold'>Global perspective.</span>", glob_desc: "Language is not a decorative switch. Each supported language needs complete interface translation, correct typography, right-to-left layout where appropriate, localized dates and tested user journeys.", glob_tag_1: "Interface direction", glob_1_t: "ENGLISH", glob_1_d: "International product language, left-to-right layout and global terminology.", glob_tag_2: "RTL localization", glob_2_t: "فارسی", glob_2_d: "رابط فارسی با چینش راست‌به‌چپ، قلم مناسب و تجربه بومی‌سازی‌شده.", glob_tag_3: "RTL localization", glob_3_t: "العربية", glob_3_d: "واجهة عربية من اليمين إلى اليسار مع دعم الخطوط والمصطلحات المحلية.", glob_tag_4: "Expansion", glob_4_t: "MORE LANGUAGES", glob_4_d: "Future localization based on user demand, quality review and regional support.",
+    faq_eyebrow: "10 / Frequently asked questions", faq_title: "Clarity builds <span class='gold'>confidence.</span>", faq_1_q: "Is every module available today?", faq_1_a: "No. This page presents a product vision and proposed portfolio. The live product should clearly identify features that are available, in development or planned. Only tested and deployed capabilities should be described as live.", faq_2_q: "Does Hakim Vahid provide real-time emergency alerts?", faq_2_a: "Only when connected to reliable, authorized and monitored data providers. Emergency information must include source, timestamp, geographic coverage and links to official authorities. Users should always follow local emergency services.", faq_3_q: "Can organizations deploy private workflows?", faq_3_a: "This is an enterprise product direction. It requires dedicated identity integration, access controls, data isolation, auditability, contractual terms and security validation.", faq_4_q: "Does Hakim Vahid replace doctors, financial advisers or public authorities?", faq_4_a: "No. Health, finance and emergency-related features should provide informational assistance with clear limitations and appropriate professional or official oversight.", faq_5_q: "How are user data and privacy handled?", faq_5_a: "The production service should publish a plain-language privacy notice, data retention schedule, subprocessors, security controls, user rights and regional compliance approach before collecting sensitive information.",
+    cta_eyebrow: "The next era of connected intelligence", cta_title: "Build with clarity. Scale with purpose.", cta_desc: "Hakim Vahid is an ambitious platform vision. The next step is to turn the strongest use cases into reliable products, validate demand and build partnerships that create measurable value.", cta_btn: "Discuss a partnership",
+    foot_desc: "The intelligence behind everything. A unified ecosystem vision for people, teams and institutions.", foot_h_1: "Platform", foot_l_1_1: "Creation & productivity", foot_l_1_2: "Intelligence modules", foot_l_1_3: "Global command center", foot_h_2: "Company", foot_l_2_1: "Roadmap", foot_l_2_2: "Technology", foot_l_2_3: "Partnerships", foot_h_3: "Trust", foot_l_3_1: "Security by design", foot_l_3_2: "Privacy information", foot_l_3_3: "Enterprise enquiries", copyright: "© <span id='year'></span> Hakim Vahid. All rights reserved.", footer_creator: "Founder & Architect: Vahid Nezamivand Chegane", footer_desc: "Concept website · Product claims must be verified before publication.",
+    modal_login_title: "Welcome back", modal_reg_title: "Create your Hakim Vahid account", modal_intro: "Front-end demonstration only. Connect a secure authentication provider before production use.", modal_email_label: "Email address", modal_pass_label: "Password", modal_pass_placeholder: "At least 8 characters", modal_submit: "Continue", modal_notice: "Demo only — no account is created and no information is transmitted."
+  },
+  fa: {
+    brand: "حکیم وحید", nav_flight: "عرشه پرواز", nav_platform: "پلتفرم", nav_command: "مرکز فرماندهی جهانی", nav_arch: "معماری", nav_roadmap: "نقشه راه", nav_investors: "سرمایه‌گذاران", nav_ecosystem: "اکوسیستم", login: "ورود", register: "ایجاد حساب", menu: "منو",
+    hero_eyebrow: "یک اکوسیستم یکپارچه هوشمندی", hero_title: "هوشمندی<br><span>فراتر از فردا.</span>", hero_sub: "یک جهان هوشمند. راه‌های بی‌پایان برای اندیشیدن، ساختن و کشف کردن.", hero_copy: "حکیم وحید به عنوان یک جهان هوشمند یکپارچه تصور می‌شود — که پژوهش، خلاقیت، اسناد، داده‌ها، گردش‌کارهای سازمانی و تخصص انسانی را در یک محیط فرماندهی زیبا گرد هم می‌آورد.", explore: "کاوش در اکوسیستم", architecture_btn: "مشاهده معماری", meta_one: "یکپارچه", meta_ecosystem: "اکوسیستم متصل", meta_global: "جهانی", meta_reach: "طراحی‌شده برای دسترسی جهانی", meta_modular: "ماژولار", meta_arch: "چشم‌انداز معماری API محور",
+    fd_kicker: "حکیم وحید / رابط هوشمندی نسل بعدی", fd_title: "به <span>عرشه پرواز هوشمندی</span> خوش آمدید", fd_lead: "یک محیط فرماندهی شیشه‌ای برای افرادی که آینده را شکل می‌دهند — دانشمندان، سازندگان، نهادها، سرمایه‌گذاران و ذهن‌های کنجکاو.", fd_side_eyebrow: "۰۱ / سیستم‌های دانشی", fd_side_title: "بیندیشید. کشف کنید. اعتبارسنجی کنید.", fd_side_desc: "از یک سوال پیچیده به مسیری ساختاریافته از پژوهش، شواهد، تحلیل و ارتباط حرکت کنید.", fd_list_1: "هوشمندی پژوهش و ادبیات", fd_list_2: "گردش‌کارهای اسناد علمی", fd_list_3: "داده‌ها، نمودارها و ترکیب شواهد", fd_list_4: "دسترسی به دانش چندزبانه", fd_core_1: "حکیم", fd_core_2: "وحید / هسته", fd_node_1: "پژوهش", fd_node_2: "اسناد", fd_node_3: "سرمایه", fd_node_4: "سازمانی", fd_node_5: "خلاقیت", fd_node_6: "آزمایشگاه داده", fd_node_7: "اعتماد و امنیت", fd_node_8: "نمای جهانی", fd_cat: "ماژول انتخاب شده / ۰۱", fd_name: "هوشمندی پژوهش", fd_desc: "کاوش در ادبیات علمی، سازماندهی شواهد، مقایسه فرضیه‌ها و تبدیل سوالات پیچیده به مسیرهای پژوهشی شفاف.", fd_link: "کاوش در قابلیت‌های پلتفرم ↗", fd_chip_1: "چند دامنه‌ای بر اساس طراحی", fd_chip_2: "تصمیمات انسانی", fd_chip_3: "اکوسیستم هوش مصنوعی ماژولار", fd_chip_4: "ساخته‌شده برای همکاری جهانی",
+    route_eyebrow: "مسیر شما در حکیم", route_caption: "مسیری شفاف از اولین تماس تا شراکت نهادی", route_1_t: "کشف", route_1_d: "کاوش در مجموعه هوشمندی", route_2_t: "تجربه", route_2_d: "تست مفهوم تعاملی", route_3_t: "درک", route_3_d: "بررسی نقشه سیستم", route_4_t: "ارزیابی", route_4_d: "بازرسی چارچوب سرمایه", route_5_t: "ارتباط", route_5_d: "شروع یک گفتگوی جدی",
+    aud_eyebrow: "اکوسیستمی برای افرادی که دنیا را حرکت می‌دهند", aud_title: "از <span class='gold'>کشف</span> تا تأثیر در دنیای واقعی.", aud_desc: "چشم‌انداز یک فضای کاری مشترک که در آن تخصص عمیق، ابزارهای عملی و سرمایه مسئولانه می‌توانند به هم برسند — بدون اینکه پیش‌نمایش یک مفهوم با یک سرویس مستقر اشتباه گرفته شود.", aud_1_t: "دانشمندان و پژوهشگران", aud_1_d: "گردش‌کارهای شواهد، نقشه‌برداری ادبیات، پشتیبانی از نسخه خطی، تفسیر داده و فضاهای همکاری.", aud_2_t: "سرمایه‌گذاران و شرکای سرمایه", aud_2_d: "اتاق‌های پروژه ساختاریافته، چک‌لیست‌های بررسی دقیق، فرضیات شفاف، نقاط عطف و روایت‌های تأثیر.", aud_3_t: "بنیان‌گذاران و نهادها", aud_3_d: "استراتژی، برنامه‌ریزی، عملیات اسناد، دانش تیم و گردش‌کارهای پشتیبانی تصمیم.", aud_4_t: "خلاقان و سازندگان", aud_4_d: "نوشتن، ایده‌پردازی بصری، نمونه‌سازی، تحلیل و گردش‌کارهای خلاقانه متصل.", aud_note: "عرشه پرواز و انتخابگر ماژول، رابط‌های مفهومی محصول تعاملی هستند. اجرای هوش مصنوعی، داده‌های زنده، حساب‌های امن، گاوصندوق‌های اسناد، تأیید سرمایه‌گذار و خدمات مالی نیازمند یکپارچه‌سازی تولید، حاکمیت و اعتبارسنجی مستقل هستند.",
+    trust_1_t: "ارکستراسیون هوش مصنوعی", trust_1_d: "مسیریابی چند مدلی و هماهنگی وظایف", trust_2_t: "انسان محور", trust_2_d: "رضایت، نظارت و کنترل کاربر", trust_3_t: "جهانی بر اساس طراحی", trust_3_d: "بومی‌سازی و آگاهی از داده‌های منطقه‌ای", trust_4_t: "پلتفرم ماژولار", trust_4_d: "خدماتی که می‌توانند مستقل تکامل یابند",
+    plat_eyebrow: "۰۱ / پلتفرم", plat_title: "یک پلتفرم. <span class='gold'>ابعاد بسیاری</span> از هوشمندی.", plat_desc: "حکیم وحید به عنوان مجموعه‌ای متصل از ابزارها تصور می‌شود که به افراد در خلق، استدلال، پژوهش، محافظت، برنامه‌ریزی و عملیات کمک می‌کند. هر ماژول می‌تواند در نقشه راه خودش توسعه و یکپارچه شود.", plat_1_tag: "ماژول اصلی", plat_1_t: "چت و استدلال جامع", plat_1_d: "مکالمات چند مدلی، استدلال ساختاریافته، کمک به کدنویسی، درک اسناد و گردش‌کارهای چندزبانه.", plat_2_tag: "مجموعه خلاقانه", plat_2_t: "خاستگاه بصری", plat_2_d: "مفاهیم تصویر، ایده‌پردازی بصری، استوری‌برد، گردش‌کارهای طراحی و یکپارچه‌سازی تولید ویدیو در جایی که خدمات دارای مجوز در دسترس است.", plat_3_tag: "مجموعه خلاقانه", plat_3_t: "استودیو صوتی", plat_3_d: "موسیقی اصلی و گردش‌کارهای صدا، کمک به ویرایش صدا، ابزارهای تولید و فناوری‌های صوتی مبتنی بر رضایت.", plat_4_tag: "بهره‌وری", plat_4_t: "کوره داده", plat_4_d: "تحلیل صفحه گسترده، کمک فرمول، استخراج PDF، گزارش‌دهی، تجسم و تولید ارائه.",
+    cmd_eyebrow: "۰۲ / مرکز فرماندهی جهانی", cmd_title: "نمایی شفاف‌تر از یک <span class='gold'>دنیای پیچیده.</span>", cmd_desc: "یک فضای کاری آگاهی موقعیتی یکپارچه می‌تواند داده‌های خارجی قابل اعتماد، هشدارها و زمینه عملیاتی را کنار هم بیاورد. پنل زیر یک پیش‌نمایش طراحی است، نه یک فید زنده.", cmd_map_label: "نمای جهانی / رابط مفهومی", cmd_side_eyebrow: "لایه هوشمندی یکپارچه", cmd_side_title: "داشبورد جامع", cmd_side_desc: "یک سطح عملیاتی واحد برای سیگنال‌های مهم — با انتساب منبع، برچسب زمان و شاخص‌های اطمینان.", cmd_m_1_t: "زمین", cmd_m_1_d: "آب و هوا، خطرات و محیط زیست", cmd_m_2_t: "شهر", cmd_m_2_d: "تحرک و سیستم‌های شهری", cmd_m_3_t: "دارایی‌ها", cmd_m_3_d: "انرژی و زیرساخت", cmd_m_4_t: "بینش", cmd_m_4_d: "تحلیل به کمک هوش مصنوعی", cmd_s_1_t: "هشدارهای آب و هوا و شدید", cmd_s_1_d: "یکپارچه‌سازی داده خارجی", cmd_s_2_t: "کیفیت هوا و پایش آتش", cmd_s_2_d: "یکپارچه‌سازی داده خارجی", cmd_s_3_t: "وضعیت ترافیک و حمل و نقل", cmd_s_3_d: "وابسته به ارائه‌دهنده", cmd_s_4_t: "هوشمندی سفر و برنامه سفر", cmd_s_4_d: "نیاز به شریک رزرو", cmd_disclaimer: "هشدارهای حیاتی برای ایمنی باید از آژانس‌های معتبر و فیدهای تأیید شده بیایند. حکیم وحید باید اطلاعات را توضیح داده و مسیریابی کند، هرگز جایگزین دستورالعمل‌های رسمی اضطراری نشود.",
+    rw_caption: "شهرها، سیستم‌ها و مردم — متصل به صورت هوشمند.", rw_eyebrow: "۰۳ / هوشمندی برای دنیای واقعی", rw_title: "از فضاهای کاری دیجیتال تا <span class='gold'>زیرساخت فیزیکی.</span>", rw_desc: "چشم‌انداز پلتفرم فراتر از چت است. حکیم وحید می‌تواند به رابطی برای درک سیستم‌های پیچیده، هماهنگی ابزارهای تخصصی و پشتیبانی از تصمیمات انسانی تبدیل شود.", rw_li_1: "عملیات شهر هوشمند و هوشمندی تحرک", rw_li_2: "دوقلوهای دیجیتال برای برنامه‌ریزی و شبیه‌سازی زیرساخت", rw_li_3: "پایش انرژی، آب و محیط زیست", rw_li_4: "آمادگی در برابر بلایا و گردش‌کارهای تاب‌آوری", rw_li_5: "دانش سازمانی و خلبان‌های عملیاتی", rw_btn: "کشف ماژول‌های هوشمندی",
+    mod_eyebrow: "۰۴ / ماژول‌های هوشمندی", mod_title: "هوشمندی تخصصی. <span class='gold'>یک تجربه.</span>", mod_desc: "این ماژول‌ها یک نمونه کار محصول بلندمدت را تعریف می‌کنند. هر کدام قبل از بازاریابی به عنوان عملیاتی، نیازمند شرکای دامنه اختصاصی، داده‌های معتبر، حاکمیت شفاف و مهندسی تولید هستند.", mod_tag: "ماژول برنامه‌ریزی شده", mod_tag_partner: "یکپارچه‌سازی شریک", mod_1_t: "سپر سایبری", mod_1_d: "بینش وضعیت امنیتی، تریاژ فعالیت مشکوک، گردش‌کارهای ریسک فایل، راهنمایی حفاظت از هویت و هماهنگی پاسخ به حادثه.", mod_2_t: "دوقلوی دیجیتال", mod_2_d: "مدل‌سازی سناریو برای شهرها، ساختمان‌ها، خدمات شهری و دارایی‌های صنعتی با استفاده از داده‌های حسگر و مکانی متصل.", mod_3_t: "هوشمندی سلامت", mod_3_d: "سازماندهی سوابق سلامت، توضیح نتایج آزمایشگاه و آماده‌سازی قرار با کنترل‌های حریم خصوصی و مرزهای بالینی.", mod_4_t: "هوشمندی مالی", mod_4_d: "تحقیقات بازار، آموزش نمونه کار، تحلیل سناریوی مالی و گزارش‌دهی ریسک — جایگزین مشاوره دارای مجوز نیست.", mod_5_t: "هوشمندی زمین", mod_5_d: "مشاهده زمین، شاخص‌های زیست‌محیطی، آگاهی از آتش‌سوزی و سیل، زمینه کیفیت هوا و بینش‌های ریسک اقلیمی.", mod_6_t: "عوامل خودمختار", mod_6_d: "عوامل مجاز برای تحقیقات چند مرحله‌ای، گردش‌کارهای اسناد، هماهنگی پروژه و اتوماسیون فرآیندهای سازمانی.", mod_7_t: "مرکز دانش", mod_7_d: "کمک به تحقیق، یادگیری مبتنی بر منبع، بررسی ادبیات، گردش‌کارهای آموزشی و فضاهای دانش چندزبانه.", mod_8_t: "انرژی و تاب‌آوری", mod_8_d: "تحلیل سیستم انرژی، بینش تقاضا، پایش دارایی و برنامه‌ریزی تاب‌آوری برای اپراتورهای زیرساخت حیاتی.", mod_9_t: "سفر و تحرک", mod_9_d: "برنامه‌ریزی سفر، مقایسه حمل و نقل، مدیریت برنامه سفر و تحویل رزرو از طریق ارائه‌دهندگان مجاز.",
+    hum_eyebrow: "۰۵ / هوشمندی انسان محور", hum_title: "ابزارهای قدرتمند. <span class='gold'>کنترل انسانی.</span>", hum_desc: "اعتماد یک ویژگی محصول است. حکیم وحید باید روشن کند که چه داده‌ای استفاده می‌شود، کدام مدل یا منبع کمک کرده، یک عامل در شرف انجام چه کاری است و کاربر چگونه می‌تواند آن را متوقف کند.", hum_li_1: "رضایت صریح برای داده‌های حساس و دسترسی به موقعیت مکانی", hum_li_2: "مجوزهای مبتنی بر نقش و کنترل‌های سطح سازمان", hum_li_3: "تأیید انسانی برای پرداخت‌ها، رزروها و اقدامات خارجی", hum_li_4: "استناد به منبع، برچسب زمان و شاخص‌های عدم قطعیت", hum_li_5: "صادرات داده، گردش‌کارهای حذف و کنترل‌های نگهداری", hum_li_6: "مسیرهای حسابرسی برای فعالیت‌های سازمانی و عامل", hum_caption: "طراحی شده برای افراد، تیم‌ها و نهادها.",
+    mc_eyebrow: "کنترل مأموریت حکیم", mc_title: "یک فرمان. <span class='gold'>هوشمندی هماهنگ.</span>", mc_desc: "یک مفهوم تجربه فرماندهی یکپارچه: یک نمای هوشمندی جهانی را کاوش کنید، تعامل دستیار را تست کنید و لایه‌های امنیتی پیشنهادی را بررسی کنید. داده‌های خارجی زنده و اجرای هوش مصنوعی نیازمند خدمات متصل هستند.", mc_glob_eyebrow: "هوشمندی جهانی", mc_glob_title: "نمای سیگنال سیاره‌ای", mc_glob_demo: "دمو بصری", mc_glob_net: "شبکه جهانی حکیم", mc_glob_concept: "تجسم مفهوم", mc_stat_1: "دامنه‌های هوشمندی", mc_stat_2: "زبان‌های رابط", mc_stat_3: "هدف دسترسی طراحی شده", mc_ai_eyebrow: "ارکستراسیون هوش مصنوعی", mc_ai_title: "هسته تعاملی حکیم", mc_ai_sim: "شبیه‌سازی محلی", mc_log_1: "رابط حکیم راه‌اندازی شد.", mc_log_2: "در انتظار دستور دمو.", mc_log_3: "اتصال مدل خارجی: پیکربندی نشده است.", mc_placeholder: "امتحان کنید: تحلیل یک پروژه انرژی پاک", mc_btn: "اجرای دمو", mc_notice: "این تعامل فقط گردش کار را نشان می‌دهد. مدل هوش مصنوعی را فراخوانی نمی‌کند و اعلان شما را ارسال نمی‌کند.",
+    sec_eyebrow: "معماری اعتماد", sec_title: "امنیت طراحی شده <span class='gold'>در هر لایه.</span>", sec_desc: "یک نقشه امنیتی تولیدی. این کنترل‌ها الزامات طراحی هستند، نه ادعایی مبنی بر اینکه این فرانت‌اند ایستا قبلاً آنها را پیاده‌سازی کرده است.", sec_1_t: "هویت و MFA", sec_1_d: "ورود امن، احراز هویت چند عاملی، SSO و بازیابی حساب.", sec_2_t: "دسترسی مبتنی بر نقش", sec_2_d: "مجوزهای کمترین امتیاز برای کاربران، تیم‌ها، مدیران و عوامل.", sec_3_t: "رمزنگاری", sec_3_d: "TLS در حال انتقال، ذخیره‌سازی رمزنگاری شده و اسرار مدیریت شده با چرخش کلید.", sec_4_t: "حسابرسی و پایش", sec_4_d: "رویدادهای قابل ردیابی، هشدارهای ناهنجاری، معیارهای عملیاتی و گردش‌کارهای حادثه.", sec_5_t: "کنترل‌های حریم خصوصی", sec_5_d: "نگهداری داده، صادرات، حذف، رضایت و تنظیمات آموزش مدل.", sec_6_t: "تاب‌آوری", sec_6_d: "پشتیبان‌گیری، تمرین بازیابی، محدودیت نرخ، بازیابی از فاجعه و محافظت از سوء استفاده.",
+    inv_eyebrow: "سرمایه و شراکت‌های استراتژیک / ۰۵", inv_title: "یک چارچوب جدی برای <span class='gold'>گفتگوهای سرمایه‌گذاری.</span>", inv_desc: "طراحی شده برای سرمایه‌گذاران، صندوق‌های حاکمیتی، مؤسسات تحقیقاتی و شرکای استراتژیک. این یک چارچوب ارائه است — نه پیشنهاد اوراق بهادار، ادعای جمع‌آوری سرمایه یا عملکرد مالی تأیید شده.", inv_1_idx: "۰۱ / اتاق پروژه", inv_1_t: "یک نمای ساختاریافته از فرصت", inv_1_d: "مشکل، راه‌حل پیشنهادی، کاربران هدف، وضعیت محصول، نقاط عطف و شواهد را در یک خلاصه پروژه قابل بررسی گرد هم آورید.", inv_1_link: "درخواست خلاصه پروژه ↗", inv_2_idx: "۰۲ / بررسی دقیق", inv_2_t: "فرضیات شفاف", inv_2_d: "مستندسازی فرضیات بازار، وابستگی‌های فنی، سوالات نظارتی، ریسک‌های اجرا و شکاف‌های شواهد.", inv_2_link: "بررسی معماری ↗", inv_3_idx: "۰۳ / اجرا", inv_3_t: "نقاط عطف قابل تأیید", inv_3_d: "دروازه‌های محصول قابل اندازه‌گیری، معیارهای پذیرش، مالکیت، جدول زمانی و اثبات تکمیل را قبل از اعلام پیشرفت تعریف کنید.", inv_3_link: "کاوش در نقشه راه ↗", inv_4_idx: "۰۴ / تأثیر", inv_4_t: "ارزش فراتر از رابط", inv_4_d: "نتایج محصول را به بهره‌وری تحقیقات، قابلیت نهادی، استقرار مسئولانه و ارزش قابل اندازه‌گیری کاربر متصل کنید.", inv_4_link: "بحث در مورد همسویی استراتژیک ↗", inv_foot_t: "چک‌لیست آمادگی سرمایه‌گذار", inv_foot_1: "شواهد محصول", inv_foot_2: "اعتبارسنجی بازار", inv_foot_3: "مدل مالی", inv_foot_4: "ثبت ریسک", inv_foot_5: "حاکمیت", inv_foot_6: "مالکیت نقطه عطف", inv_disc: "قبل از جمع‌آوری سرمایه خارجی، این اتاق را با اطلاعات شرکت تأیید شده، مدل مالی بررسی شده، جدول سقف، اسناد حقوقی، شواهد محصول و نقاط تماس نامگذاری شده پر کنید. هیچ درآمد، ارزش‌گذاری، تعهدات سرمایه‌گذار یا وضعیت استقرار در اینجا ادعا نمی‌شود.",
+    arch_eyebrow: "۰۶ / نقشه فناوری", arch_title: "یک بنیاد ماژولار برای <span class='gold'>مقیاس مسئولانه.</span>", arch_desc: "یک معماری مرجع پیشنهادی. انتخاب‌های نهایی فناوری به الزامات محصول، بررسی امنیتی، هزینه، انطباق و اعتبارسنجی مهندسی بستگی دارد.", arch_l1_t: "تجربه کاربری", arch_l1_d: "وب · موبایل · سازمانی · دسترسی‌پذیری · بومی‌سازی", arch_l2_t: "هویت و اعتماد", arch_l2_d: "احراز هویت · رضایت · RBAC · خط‌مشی · حسابرسی", arch_l2b_t: "لبه و دروازه API", arch_l2b_d: "مسیریابی · محدودیت نرخ · WAF · اعتبارسنجی درخواست", arch_core_t: "هسته حکیم وحید", arch_core_d: "ارکستراسیون · مسیریابی مدل · زمینه · مجوزهای ابزار", arch_l3_t: "پارچه مدل", arch_l3_d: "LLMها · بینایی · صدا · جاسازی‌ها", arch_l3b_t: "زمان اجرای عامل", arch_l3b_d: "گردش‌کارها · جعبه شنی · تأیید انسانی", arch_l3c_t: "خدمات دامنه", arch_l3c_d: "سلامت · زمین · مالی · تحرک", arch_l4_t: "داده و دانش", arch_l4_d: "SQL · ذخیره‌سازی شیء · جستجوی برداری · منشأ", arch_l4b_t: "قابلیت مشاهده", arch_l4b_d: "گزارش‌ها · معیارها · ردیابی‌ها · ارزیابی", arch_l4c_t: "تجارت", arch_l4c_d: "برنامه‌ها · صورتحساب · حق‌العمل · فاکتورها", arch_caption: "معماری مفهومی — بیانیه‌ای مبنی بر اینکه این سیستم‌ها قبلاً مستقر یا یکپارچه شده‌اند نیست.",
+    road_eyebrow: "۰۷ / استراتژی تحویل", road_title: "جاه‌طلبی نیازمند <span class='gold'>نظم اجرایی است.</span>", road_desc: "یک نقشه راه معتبر قابلیت‌های محصول کارآمد را از کارهای توسعه و جاه‌طلبی‌های بلندمدت جدا می‌کند. با تأیید نقاط عطف مهندسی، این برچسب‌ها را به‌روزرسانی کنید.", road_tag_1: "بنیاد فعلی — تأیید کنید", road_1_t: "بنیاد", road_1_d: "رابط اصلی، تجربه حساب، دروازه مدل، گردش‌کارهای فایل، کنترل‌های استفاده، مبانی چندزبانه و پایش. فقط ویژگی‌هایی را منتشر کنید که تست پذیرش را پاس می‌کنند.", road_tag_2: "در حال توسعه", road_2_t: "لایه یکپارچه‌سازی", road_2_d: "گسترش مدل، گردش‌کارهای عامل، فضای کاری سازمانی، اتصال‌دهنده‌های داده قابل اعتماد، یکپارچه‌سازی صورتحساب، سخت‌سازی امنیتی و داشبوردهای عملیاتی.", road_tag_3: "نقشه راه بلندمدت", road_3_t: "هوشمندی جهانی", road_3_d: "دوقلوهای دیجیتال، هوشمندی زمین، ماژول‌های سلامت و مالی، شراکت‌های تحرک، زیرساخت هوشمند و استقرارهای حاکمیتی یا نهادی.",
+    price_eyebrow: "۰۸ / مدل کسب و کار", price_title: "یک <span class='gold'>اکوسیستم خدمات</span> شفاف.", price_desc: "فقط بسته‌بندی گویا. قیمت‌های نهایی، سهمیه‌ها، دسترسی به مدل، روش‌های پرداخت، درمان مالیاتی و سطوح خدمات باید قبل از راه‌اندازی تعریف شوند.", price_tag_1: "افراد", price_1_t: "ضروری", price_1_p: "رایگان / آزمایشی", price_1_d: "تجربه اصلی را با محدودیت‌های استفاده مشخص کاوش کنید.", price_1_l1: "دسترسی اولیه هوش مصنوعی", price_1_l2: "گردش‌کارهای فایل پایه", price_1_l3: "جامعه و مرکز راهنمایی", price_1_l4: "محدودیت‌های استفاده استاندارد", price_1_btn: "پیوستن به لیست انتظار", price_tag_2: "کاربران قدرتمند", price_2_t: "حرفه‌ای", price_2_p: "اشتراک", price_2_d: "برای سازندگان، محققان و متخصصانی که به ظرفیت بالاتری نیاز دارند.", price_2_l1: "دسترسی گسترده به مدل و ابزار", price_2_l2: "کمک‌هزینه‌های بالاتر", price_2_l3: "گردش‌کارهای پیشرفته فایل و داده", price_2_l4: "گزینه‌های پشتیبانی اولویت‌دار", price_2_btn: "درخواست دسترسی حرفه‌ای", price_tag_3: "سازمان‌ها", price_3_t: "سازمانی", price_3_p: "سفارشی", price_3_d: "برای تیم‌ها و نهادهایی با نیازهای حاکمیت و یکپارچه‌سازی.", price_3_l1: "فضای کاری سازمان", price_3_l2: "دسترسی مبتنی بر نقش و حسابرسی", price_3_l3: "API و یکپارچه‌سازی سفارشی", price_3_l4: "گزینه‌های پشتیبانی قراردادی و SLA", price_3_btn: "تماس با سازمانی", price_fine: "دسترسی «نامحدود»، «بیش از ۱۰۰ مدل»، پرداخت‌های فقط کریپتو یا سطوح خدمات تضمین‌شده را تبلیغ نکنید، مگر اینکه از نظر قراردادی و فنی در دسترس باشند.",
+    glob_eyebrow: "۰۹ / تجربه جهانی", glob_title: "زبان محلی. <span class='gold'>چشم‌انداز جهانی.</span>", glob_desc: "زبان یک کلید تزئینی نیست. هر زبان پشتیبانی شده نیازمند ترجمه کامل رابط، تایپوگرافی صحیح، چیدمان راست به چپ در صورت لزوم، تاریخ‌های محلی و سفرهای کاربری تست شده است.", glob_tag_1: "جهت رابط", glob_1_t: "انگلیسی", glob_1_d: "زبان محصول بین‌المللی، چیدمان چپ به راست و اصطلاحات جهانی.", glob_tag_2: "بومی‌سازی RTL", glob_2_t: "فارسی", glob_2_d: "رابط فارسی با چینش راست‌به‌چپ، قلم مناسب و تجربه بومی‌سازی‌شده.", glob_tag_3: "بومی‌سازی RTL", glob_3_t: "العربية", glob_3_d: "واجهة عربية من اليمين إلى اليسار مع دعم الخطوط والمصطلحات المحلية.", glob_tag_4: "گسترش", glob_4_t: "زبان‌های بیشتر", glob_4_d: "بومی‌سازی آینده بر اساس تقاضای کاربر، بررسی کیفیت و پشتیبانی منطقه‌ای.",
+    faq_eyebrow: "۱۰ / سوالات متداول", faq_title: "شفافیت <span class='gold'>اعتماد</span> می‌سازد.", faq_1_q: "آیا همه ماژول‌ها امروز در دسترس هستند؟", faq_1_a: "خیر. این صفحه یک چشم‌انداز محصول و نمونه کار پیشنهادی را ارائه می‌دهد. محصول زنده باید به وضوح ویژگی‌هایی را که در دسترس، در حال توسعه یا برنامه‌ریزی شده‌اند مشخص کند. فقط قابلیت‌های تست شده و مستقر شده باید به عنوان زنده توصیف شوند.", faq_2_q: "آیا حکیم وحید هشدارهای اضطراری در زمان واقعی ارائه می‌دهد؟", faq_2_a: "فقط زمانی که به ارائه‌دهندگان داده قابل اعتماد، مجاز و پایش شده متصل باشد. اطلاعات اضطراری باید شامل منبع، برچسب زمان، پوشش جغرافیایی و پیوندهایی به مقامات رسمی باشد. کاربران باید همیشه از خدمات اضطراری محلی پیروی کنند.", faq_3_q: "آیا سازمان‌ها می‌توانند گردش‌کارهای خصوصی را مستقر کنند؟", faq_3_a: "این یک جهت محصول سازمانی است. این نیازمند یکپارچه‌سازی هویت اختصاصی، کنترل‌های دسترسی، جداسازی داده‌ها، قابلیت حسابرسی، شرایط قراردادی و اعتبارسنجی امنیتی است.", faq_4_q: "آیا حکیم وحید جایگزین پزشکان، مشاوران مالی یا مقامات دولتی می‌شود؟", faq_4_a: "خیر. ویژگی‌های مرتبط با سلامت، مالی و اضطراری باید کمک اطلاعاتی با محدودیت‌های واضح و نظارت حرفه‌ای یا رسمی مناسب ارائه دهند.", faq_5_q: "داده‌های کاربر و حریم خصوصی چگونه مدیریت می‌شوند؟", faq_5_a: "سرویس تولیدی باید قبل از جمع‌آوری اطلاعات حساس، یک اطلاعیه حریم خصوصی به زبان ساده، برنامه نگهداری داده، زیرپردازشگرها، کنترل‌های امنیتی، حقوق کاربر و رویکرد انطباق منطقه‌ای منتشر کند.",
+    cta_eyebrow: "عصر بعدی هوشمندی متصل", cta_title: "با شفافیت بسازید. با هدف مقیاس کنید.", cta_desc: "حکیم وحید یک چشم‌انداز پلتفرم جاه‌طلبانه است. قدم بعدی تبدیل قوی‌ترین موارد استفاده به محصولات قابل اعتماد، اعتبارسنجی تقاضا و ایجاد شراکت‌هایی است که ارزش قابل اندازه‌گیری ایجاد می‌کنند.", cta_btn: "بحث در مورد شراکت",
+    foot_desc: "هوشمندی پشت همه چیز. یک چشم‌انداز اکوسیستم یکپارچه برای افراد، تیم‌ها و نهادها.", foot_h_1: "پلتفرم", foot_l_1_1: "خلاقیت و بهره‌وری", foot_l_1_2: "ماژول‌های هوشمندی", foot_l_1_3: "مرکز فرماندهی جهانی", foot_h_2: "شرکت", foot_l_2_1: "نقشه راه", foot_l_2_2: "فناوری", foot_l_2_3: "شراکت‌ها", foot_h_3: "اعتماد", foot_l_3_1: "امنیت بر اساس طراحی", foot_l_3_2: "اطلاعات حریم خصوصی", foot_l_3_3: "استعلامات سازمانی", copyright: "© <span id='year'></span> حکیم وحید. تمامی حقوق محفوظ است.", footer_creator: "بنیان‌گذار و معمار: وحید نظامی‌وند چگانه", footer_desc: "وب‌سایت مفهومی · ادعاهای محصول باید قبل از انتشار تأیید شوند.",
+    modal_login_title: "خوش آمدید", modal_reg_title: "حساب حکیم وحید خود را بسازید", modal_intro: "فقط نمایش فرانت‌اند. قبل از استفاده در محیط عملیاتی، یک ارائه‌دهنده احراز هویت امن متصل کنید.", modal_email_label: "آدرس ایمیل", modal_pass_label: "رمز عبور", modal_pass_placeholder: "حداقل ۸ کاراکتر", modal_submit: "ادامه", modal_notice: "فقط دمو — هیچ حسابی ایجاد نمی‌شود و هیچ اطلاعاتی ارسال نمی‌گردد."
+  },
+  ar: {
+    brand: "حكيم وحيد", nav_flight: "سطح الطيران", nav_platform: "المنصة", nav_command: "مركز القيادة العالمي", nav_arch: "البنية التقنية", nav_roadmap: "خارطة الطريق", nav_investors: "المستثمرون", nav_ecosystem: "النظام البيئي", login: "تسجيل الدخول", register: "إنشاء حساب", menu: "القائمة",
+    hero_eyebrow: "منظومة ذكاء موحدة", hero_title: "الذكاء<br><span>بعيداً عن الغد.</span>", hero_sub: "عالم ذكاء واحد. طرق لا حصر لها للتفكير والبناء والاكتشاف.", hero_copy: "يُتصور حكيم وحيد كعالم ذكاء موحد — يجمع البحث والإبداع والمستندات والبيانات وسير عمل المؤسسات والخبرة البشرية في بيئة قيادة أنيقة واحدة.", explore: "استكشف المنظومة", architecture_btn: "استكشف البنية التقنية", meta_one: "واحد", meta_ecosystem: "منظومة مترابطة", meta_global: "عالمي", meta_reach: "مصممة للوصول العالمي", meta_modular: "نمطي", meta_arch: "رؤية بنية تعتمد على واجهات API",
+    fd_kicker: "حكيم وحيد / واجهة الذكاء من الجيل التالي", fd_title: "مرحباً بكم في <span>سطح طيران الذكاء</span>", fd_lead: "بيئة قيادة زجاجية للأشخاص الذين يصنعون ما هو قادم — العلماء، البناؤون، المؤسسات، المستثمرون والعقول الفضولية.", fd_side_eyebrow: "01 / أنظمة المعرفة", fd_side_title: "فكر. اكتشف. تحقق.", fd_side_desc: "انتقل من سؤال معقد إلى مسار منظم للبحث والأدلة والتحليل والتواصل.", fd_list_1: "ذكاء البحث والأدبيات", fd_list_2: "سير عمل المستندات العلمية", fd_list_3: "البيانات والرسوم البيانية وتوليف الأدلة", fd_list_4: "الوصول إلى المعرفة متعددة اللغات", fd_core_1: "حكيم", fd_core_2: "وحيد / النواة", fd_node_1: "البحث", fd_node_2: "المستندات", fd_node_3: "رأس المال", fd_node_4: "المؤسسة", fd_node_5: "الإبداع", fd_node_6: "مختبر البيانات", fd_node_7: "الثقة والأمان", fd_node_8: "الرؤية العالمية", fd_cat: "الوحدة المحددة / 01", fd_name: "ذكاء البحث", fd_desc: "استكشف الأدبيات العلمية، ونظم الأدلة، وقارن الفرضيات، وحول الأسئلة المعقدة إلى مسارات بحث واضحة.", fd_link: "استكشف قدرات المنصة ↗", fd_chip_1: "متعدد المجالات حسب التصميم", fd_chip_2: "قرارات بقيادة بشرية", fd_chip_3: "نظام بيئي للذكاء الاصطناعي النمطي", fd_chip_4: "مبني للتعاون العالمي",
+    route_eyebrow: "مسارك عبر حكيم", route_caption: "مسار واضح من الاتصال الأول إلى الشراكة المؤسسية", route_1_t: "اكتشف", route_1_d: "استكشف مجموعة الذكاء", route_2_t: "جرب", route_2_d: "اختبر المفهوم التفاعلي", route_3_t: "افهم", route_3_d: "راجع مخطط النظام", route_4_t: "قيّم", route_4_d: "افحص إطار رأس المال", route_5_t: "تواصل", route_5_d: "ابدأ محادثة جدية",
+    aud_eyebrow: "منظومة للأشخاص الذين يحركون العالم", aud_title: "من <span class='gold'>الاكتشاف</span> إلى التأثير في العالم الحقيقي.", aud_desc: "رؤية مساحة عمل مشتركة حيث يمكن للخبرة العميقة والأدوات العملية ورأس المال المسؤول أن تلتقي — دون الخلط بين معاينة المفهوم والخدمة المنشورة.", aud_1_t: "العلماء والباحثون", aud_1_d: "سير عمل الأدلة، ورسم خرائط الأدبيات، ودعم المخطوطات، وتفسير البيانات ومساحات التعاون.", aud_2_t: "المستثمرون وشركاء رأس المال", aud_2_d: "غرف مشاريع منظمة، وقوائم مراجعة العناية الواجبة، وافتراضات شفافة، ومعالم وسرد للتأثير.", aud_3_t: "المؤسسون والمؤسسات", aud_3_d: "الاستراتيجية، والتخطيط، وعمليات المستندات، ومعرفة الفريق وسير عمل دعم القرار.", aud_4_t: "المبدعون والبناؤون", aud_4_d: "الكتابة، والتفكير البصري، والنماذج الأولية، والتحليل وسير العمل الإبداعي المتصل.", aud_note: "سطح الطيران ومحدد الوحدات هما واجهات مفهوم المنتج التفاعلي. يتطلب تنفيذ الذكاء الاصطناعي والبيانات الحية والحسابات الآمنة وخزائن المستندات والتحقق من المستثمر والخدمات المالية عمليات تكامل الإنتاج والحوكمة والتحقق المستقل.",
+    trust_1_t: "تنسيق الذكاء الاصطناعي", trust_1_d: "توجيه متعدد النماذج وتنسيق المهام", trust_2_t: "متمحور حول الإنسان", trust_2_d: "الموافقة والرقابة وسيطرة المستخدم", trust_3_t: "عالمي حسب التصميم", trust_3_d: "التوطين والوعي بالبيانات الإقليمية", trust_4_t: "منصة نمطية", trust_4_d: "خدمات يمكن أن تتطور بشكل مستقل",
+    plat_eyebrow: "01 / المنصة", plat_title: "منصة واحدة. <span class='gold'>أبعاد عديدة</span> من الذكاء.", plat_desc: "يُتصور حكيم وحيد كمجموعة متصلة من الأدوات التي تساعد الناس على الإبداع والتفكير والبحث والحماية والتخطيط والتشغيل. يمكن تطوير كل وحدة ودمجها وفق خارطة طريقها الخاصة.", plat_1_tag: "الوحدة الأساسية", plat_1_t: "الدردشة والاستدلال الشامل", plat_1_d: "محادثات متعددة النماذج، واستدلال منظم، ومساعدة في البرمجة، وفهم المستندات وسير عمل متعدد اللغات.", plat_2_tag: "مجموعة إبداعية", plat_2_t: "التكوين البصري", plat_2_d: "مفاهيم الصور، والتفكير البصري، والقصص المصورة، وسير عمل التصميم وتكامل توليد الفيديو حيث تتوفر الخدمات المرخصة.", plat_3_tag: "مجموعة إبداعية", plat_3_t: "استوديو الصوت", plat_3_d: "الموسيقى الأصلية وسير عمل الصوت، والمساعدة في تحرير الصوت، وأدوات الإنتاج وتقنيات الصوت القائمة على الموافقة.", plat_4_tag: "الإنتاجية", plat_4_t: "مصنع البيانات", plat_4_d: "تحليل جداول البيانات، والمساعدة في الصيغ، واستخراج PDF، وإعداد التقارير، والتصور وإنشاء العروض التقديمية.",
+    cmd_eyebrow: "02 / مركز القيادة العالمي", cmd_title: "رؤية أوضح <span class='gold'>لعالم معقد.</span>", cmd_desc: "يمكن لمساحة عمل موحدة للوعي الظرفي أن تجمع البيانات الخارجية الموثوقة والتنبيهات والسياق التشغيلي معاً. اللوحة أدناه هي معاينة تصميم، وليست بثاً مباشراً.", cmd_map_label: "الرؤية العالمية / الواجهة المفاهيمية", cmd_side_eyebrow: "طبقة الذكاء الموحدة", cmd_side_title: "لوحة القيادة الشاملة", cmd_side_desc: "سطح تشغيلي واحد للإشارات المهمة — مع إسناد المصدر والطوابع الزمنية ومؤشرات الثقة.", cmd_m_1_t: "الأرض", cmd_m_1_d: "الطقس والمخاطر والبيئة", cmd_m_2_t: "المدينة", cmd_m_2_d: "التنقل والأنظمة الحضرية", cmd_m_3_t: "الأصول", cmd_m_3_d: "الطاقة والبنية التحتية", cmd_m_4_t: "البصيرة", cmd_m_4_d: "تحليل بمساعدة الذكاء الاصطناعي", cmd_s_1_t: "تنبيهات الطقس والطوارئ", cmd_s_1_d: "تكامل البيانات الخارجية", cmd_s_2_t: "مراقبة جودة الهواء والحرائق", cmd_s_2_d: "تكامل البيانات الخارجية", cmd_s_3_t: "حالة حركة المرور والنقل", cmd_s_3_d: "يعتمد على المزود", cmd_s_4_t: "ذكاء السفر والمسارات", cmd_s_4_d: "مطلوب شريك حجز", cmd_disclaimer: "يجب أن تأتي تنبيهات السلامة الحرجة من وكالات موثوقة وتغذيات معتمدة. يجب أن يشرح حكيم وحيد المعلومات ويوجهها، ولا يحل أبداً محل تعليمات الطوارئ الرسمية.",
+    rw_caption: "المدن والأنظمة والناس — متصلة بذكاء.", rw_eyebrow: "03 / الذكاء للعالم الحقيقي", rw_title: "من مساحات العمل الرقمية إلى <span class='gold'>البنية التحتية المادية.</span>", rw_desc: "تمتد رؤية المنصة إلى ما هو أبعد من الدردشة. يمكن أن يصبح حكيم وحيد واجهة لفهم الأنظمة المعقدة وتنسيق الأدوات المتخصصة ودعم القرارات البشرية.", rw_li_1: "عمليات المدينة الذكية وذكاء التنقل", rw_li_2: "التوائم الرقمية لتخطيط ومحاكاة البنية التحتية", rw_li_3: "مراقبة الطاقة والمياه والبيئة", rw_li_4: "التأهب للكوارث وسير عمل المرونة", rw_li_5: "المعرفة المؤسسية ومساعدي العمليات", rw_btn: "اكتشف وحدات الذكاء",
+    mod_eyebrow: "04 / وحدات الذكاء", mod_title: "ذكاء متخصص. <span class='gold'>تجربة واحدة.</span>", mod_desc: "تحدد هذه الوحدات محفظة منتجات طويلة الأجل. تتطلب كل منها شركاء مجال مخصصين وبيانات معتمدة وحوكمة واضحة وهندسة إنتاج قبل تسويقها كتشغيلية.", mod_tag: "وحدة مخطط لها", mod_tag_partner: "تكامل الشريك", mod_1_t: "الدرع السيبراني", mod_1_d: "رؤى الوضع الأمني، فرز النشاط المشبوه، سير عمل مخاطر الملفات، إرشادات حماية الهوية وتنسيق الاستجابة للحوادث.", mod_2_t: "التوأم الرقمي", mod_2_d: "نمذجة السيناريوهات للمدن والمباني والمرافق والأصول الصناعية باستخدام بيانات الاستشعار والبيانات الجغرافية المكانية المتصلة.", mod_3_t: "ذكاء الصحة", mod_3_d: "تنظيم السجلات الصحية، وتفسيرات نتائج المختبرات، والتحضير للمواعيد مع ضوابط الخصوصية والحدود السريرية.", mod_4_t: "الذكاء المالي", mod_4_d: "أبحاث السوق، والتعليم في المحافظ، وتحليل السيناريوهات المالية وإعداد تقارير المخاطر — وليس بديلاً عن المشورة المرخصة.", mod_5_t: "ذكاء الأرض", mod_5_d: "مراقبة الأرض، المؤشرات البيئية، الوعي بالحرائق والفيضانات، سياق جودة الهواء ورؤى المخاطر المناخية.", mod_6_t: "الوكلاء المستقلون", mod_6_d: "وكلاء مصرح لهم بالبحث متعدد الخطوات، وسير عمل المستندات، وتنسيق المشاريع وأتمتة العمليات المؤسسية.", mod_7_t: "مركز المعرفة", mod_7_d: "المساعدة البحثية، والتعلم القائم على المصادر، ومراجعات الأدبيات، وسير عمل التدريس ومساحات المعرفة متعددة اللغات.", mod_8_t: "الطاقة والمرونة", mod_8_d: "تحليلات نظام الطاقة، ورؤى الطلب، ومراقبة الأصول وتخطيط المرونة لمشغلي البنية التحتية الحيوية.", mod_9_t: "السفر والتنقل", mod_9_d: "تخطيط الرحلات، ومقارنة وسائل النقل، وإدارة المسارات وتسليم الحجوزات من خلال مزودين معتمدين.",
+    hum_eyebrow: "05 / الذكاء المتمحور حول الإنسان", hum_title: "أدوات قوية. <span class='gold'>تحكم بشري.</span>", hum_desc: "الثقة ميزة المنتج. يجب أن يوضح حكيم وحيد البيانات المستخدمة، والنموذج أو المصدر الذي ساهم، وما ينوي الوكيل فعله وكيف يمكن للمستخدم إيقافه.", hum_li_1: "موافقة صريحة على البيانات الحساسة والوصول إلى الموقع", hum_li_2: "أذونات قائمة على الأدوار وضوابط على مستوى المؤسسة", hum_li_3: "موافقة بشرية على المدفوعات والحجوزات والإجراءات الخارجية", hum_li_4: "استشهادات المصادر والطوابع الزمنية ومؤشرات عدم اليقين", hum_li_5: "تصدير البيانات وسير عمل الحذف وضوابط الاحتفاظ", hum_li_6: "مسارات التدقيق لأنشطة المؤسسة والوكيل", hum_caption: "مصمم للأفراد والفرق والمؤسسات.",
+    mc_eyebrow: "مركز قيادة حكيم", mc_title: "أمر واحد. <span class='gold'>ذكاء منسق.</span>", mc_desc: "مفهوم تجربة قيادة موحد: استكشف رؤية ذكاء عالمية، واختبر تفاعل المساعد، وافحص طبقات الأمان المقترحة. تتطلب البيانات الخارجية الحية وتنفيذ الذكاء الاصطناعي خدمات متصلة.", mc_glob_eyebrow: "الذكاء العالمي", mc_glob_title: "عرض الإشارة الكوكبية", mc_glob_demo: "عرض مرئي", mc_glob_net: "شبكة حكيم العالمية", mc_glob_concept: "تصور المفهوم", mc_stat_1: "مجالات الذكاء", mc_stat_2: "لغات الواجهة", mc_stat_3: "هدف التوفر المصمم", mc_ai_eyebrow: "تنسيق الذكاء الاصطناعي", mc_ai_title: "نواة حكيم التفاعلية", mc_ai_sim: "محاكاة محلية", mc_log_1: "تم تهيئة واجهة حكيم.", mc_log_2: "في انتظار أمر تجريبي.", mc_log_3: "اتصال النموذج الخارجي: غير مكون.", mc_placeholder: "جرب: تحليل مشروع طاقة نظيفة", mc_btn: "تشغيل العرض", mc_notice: "يوضح هذا التفاعل سير العمل فقط. لا يستدعي نموذج ذكاء اصطناعي أو ينقل مطالبتك.",
+    sec_eyebrow: "بنية الثقة", sec_title: "أمان مصمم <span class='gold'>في كل طبقة.</span>", sec_desc: "مخطط أمان إنتاجي. هذه الضوابط هي متطلبات تصميم، وليست ادعاءً بأن هذه الواجهة الأمامية الثابتة تنفذها بالفعل.", sec_1_t: "الهوية والمصادقة متعددة العوامل", sec_1_d: "تسجيل دخول آمن، مصادقة متعددة العوامل، دخول موحد واسترداد الحساب.", sec_2_t: "الوصول القائم على الأدوار", sec_2_d: "أذونات الامتياز الأقل للمستخدمين والفرق والمسؤولين والوكلاء.", sec_3_t: "التشفير", sec_3_d: "TLS أثناء النقل، وتخزين مشفر وأسرار مُدارة مع تدوير المفاتيح.", sec_4_t: "التدقيق والمراقبة", sec_4_d: "أحداث قابلة للتتبع، وتنبيهات الشذوذ، والمقاييس التشغيلية وسير عمل الحوادث.", sec_5_t: "ضوابط الخصوصية", sec_5_d: "الاحتفاظ بالبيانات، والتصدير، والحذف، والموافقة وتفضيلات تدريب النموذج.", sec_6_t: "المرونة", sec_6_d: "النسخ الاحتياطي، وتدريبات الاستعادة، وحدود المعدل، والتعافي من الكوارث والحماية من سوء الاستخدام.",
+    inv_eyebrow: "رأس المال والشراكات الاستراتيجية / 05", inv_title: "إطار جدي <span class='gold'>لمحادثات الاستثمار.</span>", inv_desc: "مصمم للمستثمرين، والصناديق السيادية، والمؤسسات البحثية والشركاء الاستراتيجيين. هذا إطار عرض تقديمي — وليس عرضًا للأوراق المالية، أو ادعاءً بجمع الأموال أو أداءً ماليًا تم التحقق منه.", inv_1_idx: "01 / غرفة المشروع", inv_1_t: "رؤية منظمة واحدة للفرصة", inv_1_d: "اجمع المشكلة، والحل المقترح، والمستخدمين المستهدفين، وحالة المنتج، والمعالم والأدلة في موجز مشروع واحد قابل للمراجعة.", inv_1_link: "طلب إحاطة المشروع ↗", inv_2_idx: "02 / العناية الواجبة", inv_2_t: "افتراضات شفافة", inv_2_d: "توثيق افتراضات السوق، والتبعيات التقنية، والأسئلة التنظيمية، ومخاطر التنفيذ وفجوات الأدلة.", inv_2_link: "مراجعة البنية ↗", inv_3_idx: "03 / التنفيذ", inv_3_t: "معالم يمكن التحقق منها", inv_3_d: "حدد بوابات المنتج القابلة للقياس، ومعايير القبول، والملكية، والجداول الزمنية وإثبات الإنجاز قبل الإعلان عن التقدم.", inv_3_link: "استكشف خارطة الطريق ↗", inv_4_idx: "04 / التأثير", inv_4_t: "قيمة تتجاوز الواجهة", inv_4_d: "اربط نتائج المنتج بإنتاجية البحث، والقدرة المؤسسية، والنشر المسؤول وقيمة المستخدم القابلة للقياس.", inv_4_link: "ناقش التوافق الاستراتيجي ↗", inv_foot_t: "قائمة جاهزية المستثمر", inv_foot_1: "أدلة المنتج", inv_foot_2: "التحقق من السوق", inv_foot_3: "النموذج المالي", inv_foot_4: "سجل المخاطر", inv_foot_5: "الحوكمة", inv_foot_6: "ملكية المعالم", inv_disc: "قبل جمع الأموال الخارجية، املأ هذه الغرفة بمعلومات الشركة المعتمدة، والنموذج المالي المراجع، وجدول الحد الأقصى، والوثائق القانونية، وأدلة المنتج ونقاط الاتصال المسماة. لا يتم تأكيد أي إيرادات أو تقييم أو التزامات مستثمرين أو حالة نشر هنا.",
+    arch_eyebrow: "06 / مخطط التكنولوجيا", arch_title: "أساس نمطي <span class='gold'>لحجم مسؤول.</span>", arch_desc: "بنية مرجعية مقترحة. تعتمد خيارات التكنولوجيا النهائية على متطلبات المنتج، والمراجعة الأمنية، والتكلفة والامتثال والتحقق الهندسي.", arch_l1_t: "تجربة المستخدم", arch_l1_d: "الويب · الجوال · المؤسسة · إمكانية الوصول · التوطين", arch_l2_t: "الهوية والثقة", arch_l2_d: "المصادقة · الموافقة · RBAC · السياسة · التدقيق", arch_l2b_t: "الحافة وبوابة API", arch_l2b_d: "التوجيه · حدود المعدل · WAF · التحقق من الطلب", arch_core_t: "نواة حكيم وحيد", arch_core_d: "التنسيق · توجيه النموذج · السياق · أذونات الأدوات", arch_l3_t: "نسيج النموذج", arch_l3_d: "نماذج اللغة · الرؤية · الصوت · التضمينات", arch_l3b_t: "وقت تشغيل الوكيل", arch_l3b_d: "سير العمل · الصندوق الرملي · الموافقة البشرية", arch_l3c_t: "خدمات المجال", arch_l3c_d: "الصحة · الأرض · المالية · التنقل", arch_l4_t: "البيانات والمعرفة", arch_l4_d: "SQL · تخزين الكائنات · البحث المتجهي · المصدر", arch_l4b_t: "الرصد", arch_l4b_d: "السجلات · المقاييس · التتبع · التقييم", arch_l4c_t: "التجارة", arch_l4c_d: "الخطط · الفواتير · الاستحقاقات · الفواتير", arch_caption: "بنية مفاهيمية — وليس بيانًا بأن هذه الأنظمة تم نشرها أو دمجها بالفعل.",
+    road_eyebrow: "07 / استراتيجية التسليم", road_title: "الطموح يحتاج إلى <span class='gold'>انضباط تنفيذي.</span>", road_desc: "خارطة طريق موثوقة تفصل قدرات المنتج العاملة عن أعمال التطوير والطموحات طويلة الأجل. قم بتحديث هذه التصنيفات عند التحقق من معالم الهندسة.", road_tag_1: "الأساس الحالي — تحقق", road_1_t: "الأساس", road_1_d: "الواجهة الأساسية، تجربة الحساب، بوابة النموذج، سير عمل الملفات، ضوابط الاستخدام، الأسس متعددة اللغات والمراقبة. انشر فقط الميزات التي تجتاز اختبار القبول.", road_tag_2: "قيد التطوير", road_2_t: "طبقة التكامل", road_2_d: "توسيع النموذج، سير عمل الوكيل، مساحات العمل المؤسسية، موصلات البيانات الموثوقة، تكامل الفواتير، تقوية الأمان ولوحات المعلومات التشغيلية.", road_tag_3: "خارطة طريق طويلة الأجل", road_3_t: "الذكاء العالمي", road_3_d: "التوائم الرقمية، ذكاء الأرض، وحدات الصحة والمالية، شراكات التنقل، البنية التحتية الذكية والنشر السيادي أو المؤسسي.",
+    price_eyebrow: "08 / نموذج العمل", price_title: "<span class='gold'>نظام بيئي للخدمة</span> شفاف.", price_desc: "التغليف التوضيحي فقط. يجب تحديد الأسعار النهائية والحصص والوصول إلى النموذج وطرق الدفع والمعالجة الضريبية ومستويات الخدمة قبل الإطلاق.", price_tag_1: "الأفراد", price_1_t: "الأساسي", price_1_p: "مجاني / تجريبي", price_1_d: "استكشف التجربة الأساسية بحدود استخدام محددة بوضوح.", price_1_l1: "الوصول الأولي للذكاء الاصطناعي", price_1_l2: "سير عمل الملفات الأساسي", price_1_l3: "المجتمع ومركز المساعدة", price_1_l4: "حدود الاستخدام القياسية", price_1_btn: "انضم إلى قائمة الانتظار", price_tag_2: "المستخدمون المحترفون", price_2_t: "المحترف", price_2_p: "اشتراك", price_2_d: "للمبدعين والباحثين والمحترفين الذين يحتاجون إلى سعة أعلى.", price_2_l1: "وصول موسع للنماذج والأدوات", price_2_l2: "بدلات استخدام أعلى", price_2_l3: "سير عمل متقدم للملفات والبيانات", price_2_l4: "خيارات دعم ذات أولوية", price_2_btn: "طلب وصول المحترفين", price_tag_3: "المؤسسات", price_3_t: "المؤسسي", price_3_p: "مخصص", price_3_d: "للفرق والمؤسسات ذات احتياجات الحوكمة والتكامل.", price_3_l1: "مساحات عمل المؤسسة", price_3_l2: "الوصول القائم على الأدوار والتدقيق", price_3_l3: "واجهة برمجة التطبيقات والتكاملات المخصصة", price_3_l4: "خيارات الدعم التعاقدي واتفاقية مستوى الخدمة", price_3_btn: "اتصل بالمؤسسة", price_fine: "لا تعلن عن الوصول \"غير المحدود\"، أو \"أكثر من 100 نموذج\"، أو المدفوعات بالعملات المشفرة فقط أو مستويات الخدمة المضمونة ما لم تكن متاحة تعاقديًا وتقنيًا.",
+    glob_eyebrow: "09 / التجربة العالمية", glob_title: "اللغة المحلية. <span class='gold'>المنظور العالمي.</span>", glob_desc: "اللغة ليست مفتاحًا زخرفيًا. تحتاج كل لغة مدعومة إلى ترجمة كاملة للواجهة، وطباعة صحيحة، وتخطيط من اليمين إلى اليسار حيثما كان ذلك مناسبًا، وتواريخ محلية ورحلات مستخدم تم اختبارها.", glob_tag_1: "اتجاه الواجهة", glob_1_t: "الإنجليزية", glob_1_d: "لغة المنتج الدولية، والتخطيط من اليسار إلى اليمين والمصطلحات العالمية.", glob_tag_2: "التوطين من اليمين إلى اليسار", glob_2_t: "فارسی", glob_2_d: "رابط فارسی با چینش راست‌به‌چپ، قلم مناسب و تجربه بومی‌سازی‌شده.", glob_tag_3: "التوطين من اليمين إلى اليسار", glob_3_t: "العربية", glob_3_d: "واجهة عربية من اليمين إلى اليسار مع دعم الخطوط والمصطلحات المحلية.", glob_tag_4: "التوسع", glob_4_t: "المزيد من اللغات", glob_4_d: "التوطين المستقبلي بناءً على طلب المستخدم ومراجعة الجودة والدعم الإقليمي.",
+    faq_eyebrow: "10 / الأسئلة الشائعة", faq_title: "الوضوح يبني <span class='gold'>الثقة.</span>", faq_1_q: "هل كل وحدة متاحة اليوم؟", faq_1_a: "لا. تقدم هذه الصفحة رؤية المنتج والمحفظة المقترحة. يجب أن يحدد المنتج المباشر بوضوح الميزات المتاحة أو قيد التطوير أو المخطط لها. يجب وصف القدرات التي تم اختبارها ونشرها فقط بأنها حية.", faq_2_q: "هل يوفر حكيم وحيد تنبيهات طوارئ في الوقت الفعلي؟", faq_2_a: "فقط عند الاتصال بمزودي بيانات موثوقين ومعتمدين ومراقبين. يجب أن تتضمن معلومات الطوارئ المصدر والطابع الزمني والتغطية الجغرافية وروابط للسلطات الرسمية. يجب على المستخدمين دائمًا اتباع خدمات الطوارئ المحلية.", faq_3_q: "هل يمكن للمؤسسات نشر سير عمل خاص؟", faq_3_a: "هذا اتجاه منتج للمؤسسات. يتطلب تكامل الهوية المخصص، وضوابط الوصول، وعزل البيانات، وقابلية التدقيق، والشروط التعاقدية والتحقق الأمني.", faq_4_q: "هل يحل حكيم وحيد محل الأطباء أو المستشارين الماليين أو السلطات العامة؟", faq_4_a: "لا. يجب أن تقدم الميزات المتعلقة بالصحة والمالية والطوارئ مساعدة إعلامية بحدود واضحة وإشراف مهني أو رسمي مناسب.", faq_5_q: "كيف يتم التعامل مع بيانات المستخدم والخصوصية؟", faq_5_a: "يجب أن تنشر خدمة الإنتاج إشعارًا بالخصوصية بلغة واضحة، وجدول الاحتفاظ بالبيانات، والمعالجين الفرعيين، وضوابط الأمان، وحقوق المستخدم ونهج الامتثال الإقليمي قبل جمع المعلومات الحساسة.",
+    cta_eyebrow: "العصر القادم للذكاء المتصل", cta_title: "ابنِ بوضوح. قم بالتوسع بهدف.", cta_desc: "حكيم وحيد هو رؤية منصة طموحة. الخطوة التالية هي تحويل أقوى حالات الاستخدام إلى منتجات موثوقة، والتحقق من الطلب وبناء شراكات تخلق قيمة قابلة للقياس.", cta_btn: "ناقش شراكة",
+    foot_desc: "الذكاء وراء كل شيء. رؤية نظام بيئي موحد للأفراد والفرق والمؤسسات.", foot_h_1: "المنصة", foot_l_1_1: "الإبداع والإنتاجية", foot_l_1_2: "وحدات الذكاء", foot_l_1_3: "مركز القيادة العالمي", foot_h_2: "الشركة", foot_l_2_1: "خارطة الطريق", foot_l_2_2: "التكنولوجيا", foot_l_2_3: "الشراكات", foot_h_3: "الثقة", foot_l_3_1: "الأمان حسب التصميم", foot_l_3_2: "معلومات الخصوصية", foot_l_3_3: "استفسارات المؤسسات", copyright: "© <span id='year'></span> حكيم وحيد. جميع الحقوق محفوظة.", footer_creator: "المؤسس والمعماري: وحيد نظامي وند تشيغاني", footer_desc: "موقع ويب مفاهيمي · يجب التحقق من ادعاءات المنتج قبل النشر.",
+    modal_login_title: "مرحباً بعودتك", modal_reg_title: "أنشئ حساب حكيم وحيد الخاص بك", modal_intro: "عرض الواجهة الأمامية فقط. قم بتوصيل مزود مصادقة آمن قبل الاستخدام في بيئة الإنتاج.", modal_email_label: "عنوان البريد الإلكتروني", modal_pass_label: "كلمة المرور", modal_pass_placeholder: "8 أحرف على الأقل", modal_submit: "متابعة", modal_notice: "عرض فقط — لا يتم إنشاء حساب ولا يتم إرسال أي معلومات."
+  }
 };
-function setLanguage(lang){const dict=translations[lang]||translations.en;document.documentElement.lang=lang;document.documentElement.dir=(lang==="fa"||lang==="ar")?"rtl":"ltr";document.body.dir=document.documentElement.dir;document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(dict[key])el.textContent=dict[key]});}
+
+const mcTrans = {
+    en: { placeholder: "Try: Analyze a clean-energy project", btn: "Run demo", log1: "Hakim interface initialized.", log2: "Waiting for a demo command.", log3: "External model connection: not configured.", req: "Request received: ", step1: "Intent classification: demo workflow selected.", step2: "Task planner: decomposing request into reviewable steps.", step3: "Specialist routing: research / analysis / synthesis (simulated).", step4: "Safety gate: sensitive actions require explicit approval.", step5: "Demo complete: connect an AI orchestration API for real execution." },
+    fa: { placeholder: "امتحان کنید: تحلیل یک پروژه انرژی پاک", btn: "اجرای دمو", log1: "رابط حکیم راه‌اندازی شد.", log2: "در انتظار دستور دمو.", log3: "اتصال مدل خارجی: پیکربندی نشده است.", req: "درخواست دریافت شد: ", step1: "طبقه‌بندی نیت: گردش‌کار دمو انتخاب شد.", step2: "برنامه‌ریز وظیفه: تجزیه درخواست به مراحل قابل بررسی.", step3: "مسیریابی متخصص: تحقیق / تحلیل / ترکیب (شبیه‌سازی شده).", step4: "دروازه ایمنی: اقدامات حساس نیاز به تایید صریح دارند.", step5: "دمو کامل شد: برای اجرای واقعی یک API ارکستراسیون هوش مصنوعی متصل کنید." },
+    ar: { placeholder: "جرب: تحليل مشروع طاقة نظيفة", btn: "تشغيل العرض", log1: "تم تهيئة واجهة حكيم.", log2: "في انتظار أمر تجريبي.", log3: "اتصال النموذج الخارجي: غير مكون.", req: "تم استلام الطلب: ", step1: "تصنيف النية: تم تحديد سير العمل التجريبي.", step2: "مخطط المهام: تفكيك الطلب إلى خطوات قابلة للمراجعة.", step3: "توجيه متخصص: بحث / تحليل / تركيب (محاكاة).", step4: "بوابة الأمان: الإجراءات الحساسة تتطلب موافقة صريحة.", step5: "اكتمل العرض: قم بتوصيل واجهة برمجة تطبيقات تنسيق الذكاء الاصطناعي للتنفيذ الحقيقي." }
+};
+
+function setLanguage(lang){
+    const dict = translations[lang] || translations.en;
+    document.documentElement.lang = lang;
+    const isRTL = lang === "fa" || lang === "ar";
+    document.documentElement.dir = isRTL ? "rtl" : "ltr";
+    document.body.dir = document.documentElement.dir;
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        if(dict[key]) el.textContent = dict[key];
+    });
+
+    document.querySelectorAll("[data-i18n-html]").forEach(el => {
+        const key = el.dataset.i18nHtml;
+        if(dict[key]) el.innerHTML = dict[key];
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        if(dict[key]) el.placeholder = dict[key];
+    });
+
+    const mc = mcTrans[lang] || mcTrans.en;
+    if(document.getElementById("missionInput")) document.getElementById("missionInput").placeholder = mc.placeholder;
+    if(document.getElementById("missionSend")) document.getElementById("missionSend").textContent = mc.btn;
+}
+
 document.getElementById("language").addEventListener("change",e=>setLanguage(e.target.value));
 document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("mainNav").classList.toggle("open"));
 document.querySelectorAll("#mainNav a").forEach(a=>a.addEventListener("click",()=>document.getElementById("mainNav").classList.remove("open")));
 const modal=document.getElementById("authModal"),title=document.getElementById("modalTitle"),intro=document.getElementById("modalIntro"),submit=document.getElementById("modalSubmit"),passwordWrap=document.getElementById("passwordWrap");
-document.querySelectorAll("[data-modal]").forEach(btn=>btn.addEventListener("click",()=>{const mode=btn.dataset.modal;title.textContent=mode==="login"?"Welcome back":"Create your Hakim Vahid account";intro.textContent="Front-end demonstration only. Connect a secure authentication provider before production use.";submit.textContent=mode==="login"?"Log in":"Create account";passwordWrap.style.display="block";modal.classList.add("open")}));
+document.querySelectorAll("[data-modal]").forEach(btn=>btn.addEventListener("click",()=>{
+    const mode=btn.dataset.modal;
+    const lang = document.getElementById("language").value;
+    const t = translations[lang] || translations.en;
+    title.textContent=mode==="login"?t.modal_login_title:t.modal_reg_title;
+    intro.textContent=t.modal_intro;
+    submit.textContent=mode==="login"?t.login:t.register;
+    passwordWrap.style.display="block";
+    modal.classList.add("open");
+}));
 document.getElementById("closeModal").addEventListener("click",()=>modal.classList.remove("open"));
 modal.addEventListener("click",e=>{if(e.target===modal)modal.classList.remove("open")});
 const toast=document.getElementById("toast");
 function showToast(message){toast.textContent=message;toast.style.display="block";setTimeout(()=>toast.style.display="none",3500)}
-document.getElementById("demoForm").addEventListener("submit",e=>{e.preventDefault();showToast("Demo only: authentication is not connected yet.");modal.classList.remove("open")});
+document.getElementById("demoForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const lang = document.getElementById("language").value;
+    const t = translations[lang] || translations.en;
+    showToast(t.modal_notice);
+    modal.classList.remove("open");
+});
 document.getElementById("year").textContent=new Date().getFullYear();
 
 // Progressive enhancement: reveal-on-scroll, module explainers and local Mission Control demo.
@@ -676,11 +1003,21 @@ document.getElementById("year").textContent=new Date().getFullYear();
  const log=document.getElementById('missionLog'),input=document.getElementById('missionInput'),send=document.getElementById('missionSend'),core=document.getElementById('coreWrap');
  function line(t){const d=document.createElement('div');d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight}
  function runDemo(){
+  const lang = document.getElementById("language").value;
+  const t = mcTrans[lang] || mcTrans.en;
   const prompt=input.value.trim();if(!prompt){input.focus();return}
-  input.value='';core.classList.add('core-thinking');send.disabled=true;send.textContent='Running…';
-  line('Request received: '+prompt.slice(0,100));
-  const steps=['Intent classification: demo workflow selected.','Task planner: decomposing request into reviewable steps.','Specialist routing: research / analysis / synthesis (simulated).','Safety gate: sensitive actions require explicit approval.','Demo complete: connect an AI orchestration API for real execution.'];
-  let i=0;const tick=()=>{if(i<steps.length){line(steps[i++]);setTimeout(tick,reduced?20:420)}else{core.classList.remove('core-thinking');send.disabled=false;send.textContent='Run demo'}};
+  input.value='';core.classList.add('core-thinking');send.disabled=true;send.textContent='...';
+  line(t.req + prompt.slice(0,100));
+  const steps=[t.step1, t.step2, t.step3, t.step4, t.step5];
+  let i=0;const tick=()=>{
+      if(i<steps.length){
+          line(steps[i++]);setTimeout(tick,reduced?20:420)
+      }else{
+          core.classList.remove('core-thinking');
+          send.disabled=false;
+          send.textContent=t.btn;
+      }
+  };
   setTimeout(tick,reduced?20:350);
  }
  send?.addEventListener('click',runDemo);input?.addEventListener('keydown',e=>{if(e.key==='Enter')runDemo()});
@@ -691,22 +1028,24 @@ document.getElementById("year").textContent=new Date().getFullYear();
 <script>
 (()=>{
  const data={
-  research:{cat:'SELECTED MODULE / 01',name:'Research Intelligence',desc:'Explore scientific literature, organize evidence, compare hypotheses and turn complex questions into clear research pathways.',href:'#modules'},
-  documents:{cat:'SELECTED MODULE / 02',name:'Document & Knowledge Vault',desc:'A future workspace for PDFs, reports, spreadsheets, presentations and structured knowledge — with traceable sources and human review.',href:'#modules'},
-  capital:{cat:'SELECTED MODULE / 03',name:'Capital & Project Intelligence',desc:'Present ventures through clear milestones, transparent assumptions, risk registers, impact metrics and due-diligence-ready project rooms.',href:'#contact'},
-  enterprise:{cat:'SELECTED MODULE / 04',name:'Enterprise Command',desc:'Coordinate teams, workflows, institutional knowledge, operational dashboards and permission-aware collaboration.',href:'#architecture'},
-  creation:{cat:'SELECTED MODULE / 05',name:'Creative Genesis',desc:'Connect writing, visual concepts, design exploration, presentations and multimedia workflows in one creative environment.',href:'#modules'},
-  data:{cat:'SELECTED MODULE / 06',name:'Data & Decision Lab',desc:'Transform structured data into analysis, charts, scenarios and decision-support reports with clear assumptions.',href:'#mission-control'},
-  security:{cat:'SELECTED MODULE / 07',name:'Trust, Privacy & Governance',desc:'A security-first design direction: identity, access controls, auditability, data governance and human approval for sensitive actions.',href:'#trust-center'},
-  global:{cat:'SELECTED MODULE / 08',name:'Global Intelligence View',desc:'A unified view for trusted external signals, regional context, research and operational awareness — when connected to verified data sources.',href:'#command'}
+  research:{cat:'fd_cat_1',name:'fd_name_1',desc:'fd_desc_1',href:'#modules'},
+  documents:{cat:'fd_cat_2',name:'fd_name_2',desc:'fd_desc_2',href:'#modules'},
+  capital:{cat:'fd_cat_3',name:'fd_name_3',desc:'fd_desc_3',href:'#contact'},
+  enterprise:{cat:'fd_cat_4',name:'fd_name_4',desc:'fd_desc_4',href:'#architecture'},
+  creation:{cat:'fd_cat_5',name:'fd_name_5',desc:'fd_desc_5',href:'#modules'},
+  data:{cat:'fd_cat_6',name:'fd_name_6',desc:'fd_desc_6',href:'#mission-control'},
+  security:{cat:'fd_cat_7',name:'fd_name_7',desc:'fd_desc_7',href:'#trust-center'},
+  global:{cat:'fd_cat_8',name:'fd_name_8',desc:'fd_desc_8',href:'#command'}
  };
  const nodes=document.querySelectorAll('.hv-node');
  nodes.forEach(node=>node.addEventListener('click',()=>{
   const item=data[node.dataset.hv];if(!item)return;
+  const lang = document.getElementById("language").value;
+  const dict = translations[lang] || translations.en;
   nodes.forEach(n=>n.classList.toggle('active',n===node));
-  document.getElementById('hvCategory').textContent=item.cat;
-  document.getElementById('hvName').textContent=item.name;
-  document.getElementById('hvDesc').textContent=item.desc;
+  document.getElementById('hvCategory').textContent=dict[item.cat] || item.cat;
+  document.getElementById('hvName').textContent=dict[item.name] || item.name;
+  document.getElementById('hvDesc').textContent=dict[item.desc] || item.desc;
   document.getElementById('hvLink').setAttribute('href',item.href);
  }));
 })();
@@ -735,6 +1074,6 @@ document.getElementById("year").textContent=new Date().getFullYear();
 })();
 
 </script>
-
 </body>
 </html>
+```
