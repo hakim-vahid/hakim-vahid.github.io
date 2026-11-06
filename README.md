@@ -6,16 +6,18 @@
   
   <br>
 
-  <!-- GLOWING BUTTONS -->
-  <a href="https://hakim-vahid.github.io/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #d7b45a, #b58b36); color: #050505; padding: 16px 32px; font-size: 18px; font-weight: 900; text-decoration: none; border-radius: 50px; box-shadow: 0 0 30px rgba(215, 180, 90, 0.6); letter-spacing: 2px; transition: 0.3s;">
-    ⚡ ENTER THE FLIGHT DECK
+  <!-- REAL, FUNCTIONAL BUTTONS -->
+  <a href="https://hakim-vahid.github.io/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #8be8e3, #3e879e); color: #050505; padding: 15px 30px; font-size: 16px; font-weight: 900; text-decoration: none; border-radius: 50px; box-shadow: 0 0 25px rgba(139, 232, 227, 0.5); margin: 10px; letter-spacing: 1px; transition: 0.3s;">
+    🌐 VISIT PLATFORM
   </a>
   
-  <br><br>
-  
-  <a href="#the-master-roadmap" style="color: #8be8e3; text-decoration: none; margin: 0 10px; font-size: 14px;">Roadmap</a> • 
-  <a href="#the-ecosystem-architecture" style="color: #8be8e3; text-decoration: none; margin: 0 10px; font-size: 14px;">Architecture</a> • 
-  <a href="#strategic-partnerships" style="color: #8be8e3; text-decoration: none; margin: 0 10px; font-size: 14px;">Partnerships</a>
+  <a href="https://www.linkedin.com/in/vahid-nezamevand-chegane" target="_blank" style="display: inline-block; background: transparent; border: 2px solid #8be8e3; color: #8be8e3; padding: 13px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 0 20px rgba(139, 232, 227, 0.2); margin: 10px; letter-spacing: 1px; transition: 0.3s;">
+    💼 LINKEDIN PROFILE
+  </a>
+
+  <a href="mailto:hakim-vahid@proton.me" style="display: inline-block; background: transparent; border: 2px solid #d7b45a; color: #d7b45a; padding: 13px 28px; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 0 20px rgba(215, 180, 90, 0.2); margin: 10px; letter-spacing: 1px; transition: 0.3s;">
+    ✉️ CONTACT FOUNDER
+  </a>
 
   <br><br>
 
@@ -26,7 +28,8 @@
 
   <br><br>
   
-  <p><b>Architect & Founder: Vahid Nezamivand Chegane</b></p>
+  <p><b>Architect & Founder:</b> Vahid Nezamivand Chegane</p>
+  <p><b>Official Contact:</b> <a href="mailto:hakim-vahid@proton.me" style="color: #8be8e3; text-decoration: none;">hakim-vahid@proton.me</a></p>
 </div>
 
 ---
@@ -56,6 +59,8 @@ The project is being built **piece by piece, module by module**. Each component 
 The founding vision is to design an integrated intelligence ecosystem from the system level: defining its identity, experience, modular structure, strategic direction and the relationships between its future capabilities.
 
 The role of the architect is to see the whole picture while shaping each individual piece — ensuring that every module has a purpose, every connection contributes to the larger system, and the platform develops according to a coherent long-term direction.
+
+*Connect with the founder via [LinkedIn](https://www.linkedin.com/in/vahid-nezamevand-chegane) or email at [hakim-vahid@proton.me](mailto:hakim-vahid@proton.me).*
 
 ---
 
